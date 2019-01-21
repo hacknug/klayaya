@@ -38,7 +38,7 @@ module.exports = {
     {
       use: '@gridsome/source-wordpress',
       options: {
-        baseUrl: 'http://klayaya.com',
+        baseUrl: 'https://dev.nestorvera.com/klayaya',
         typeName: 'WordPress',
         perPage: 100,
         concurrent: 10,

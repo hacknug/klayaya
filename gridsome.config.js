@@ -1,26 +1,6 @@
 // This is where project configuration and installed plugin options are located.
 // Learn more: https://gridsome.org/docs/config
 
-const config = {
-  tailwind: './tailwind.js',
-  purgecss: {
-    whitelist: ['html', 'body', 'markdown'],
-    content: [
-      './src/components/**/*.vue',
-      './src/layouts/**/*.vue',
-      './src/pages/**/*.vue'
-    ],
-    extractors: [{
-      extensions: ['vue', 'html'],
-      extractor: class TailwindExtractor {
-        static extract(content) {
-          return content.match(/[A-z0-9-:\/]+/g) || []
-        }
-      },
-    }]
-  },
-}
-
 module.exports = {
 	siteName: 'KLaYaya',
 	siteUrl: 'https://dev.nestorvera.com/klayaya',
@@ -35,12 +15,12 @@ module.exports = {
       .tap(options => {
         options.plugins.unshift(...[
           require('postcss-import'),
-          require('tailwindcss')(config.tailwind),
+          require('tailwindcss')('./tailwind.js'),
         ])
 
         if (process.env.NODE_ENV === 'production') {
           options.plugins.push(...[
-            require('@fullhuman/postcss-purgecss')(config.purgecss),
+            require('@fullhuman/postcss-purgecss'),
           ])
         }
 
@@ -50,8 +30,8 @@ module.exports = {
     config.module
       .rule('vue')
       .use('vue-svg-inline-loader')
-        .loader('vue-svg-inline-loader')
-        .options({ /* ... */ })
+      .loader('vue-svg-inline-loader')
+      .options({ /* ... */ })
   },
 
   plugins: [

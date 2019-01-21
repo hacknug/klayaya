@@ -1,7 +1,11 @@
 import '~/assets/css/main.pcss'
+import '~/assets/img/logo.svg'
+
 import DefaultLayout from '~/layouts/Default.vue'
+import Fragment from 'vue-fragment'
 
 export default function (Vue, { head }) {
+  Vue.use(Fragment.Plugin)
   Vue.component('Layout', DefaultLayout)
 
   head.meta = [
@@ -13,6 +17,6 @@ export default function (Vue, { head }) {
 
   head.bodyAttrs = {
     ...head.bodyAttrs,
-    class: 'font-sans'
+    class: 'flex min-h-screen text-black text-base leading-normal font-sans'
   }
 }

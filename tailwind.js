@@ -2,6 +2,7 @@ let defaultConfig = require('tailwindcss/defaultConfig')()
 
 let colors = {
   'transparent': 'transparent',
+  'current': 'currentColor',
 
   'black': '#22292f',
   'grey-darkest': '#3d4852',
@@ -189,7 +190,9 @@ module.exports = {
     '8': '8px',
   },
 
-  borderColors: global.Object.assign({ default: colors['grey-light'] }, colors),
+  borderColors: global.Object.assign({
+    default: colors['current'],
+  }, colors),
 
   borderRadius: {
     'none': '0',

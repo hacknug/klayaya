@@ -8,7 +8,9 @@
   },
   "dependencies": {
     "@gridsome/source-wordpress": "^0.1.1",
-    "gridsome": "^0.4.4"
+    "gridsome": "^0.4.4",
+    "vue-fragment": "^1.5.0",
+    "vue-svg-inline-loader": "^1.2.9"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^1.1.0",

@@ -7,14 +7,14 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
-    "@gridsome/source-wordpress": "^0.1.1",
-    "gridsome": "^0.4.4",
+    "@gridsome/source-wordpress": "^0.2.1",
+    "gridsome": "^0.4.5",
     "vue-fragment": "^1.5.0",
     "vue-svg-inline-loader": "^1.2.10"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^1.1.0",
     "postcss-import": "^12.0.1",
-    "tailwindcss": "^0.7.3"
+    "tailwindcss": "^0.7.4"
   }
 }

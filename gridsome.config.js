@@ -17,6 +17,15 @@ module.exports = {
           ...[
             require('postcss-import'),
             require('tailwindcss')('./tailwind.js'),
+            require('postcss-preset-env')({
+              stage: 0,
+              autoprefixer: false,
+              features: {
+                'nesting-rules': {
+                  bubble: ['apply', 'variants', 'responsive', 'screen'],
+                },
+              },
+            }),
           ]
         )
 

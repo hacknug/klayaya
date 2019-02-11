@@ -8,7 +8,10 @@ import DefaultLayout from '~/layouts/Default.vue'
 
 export default function (Vue, { head }) {
   Vue.use(Fragment.Plugin)
-  Vue.use(VueFeather)
+  // Vue.use(VueFeather)
+
+  Vue.component(VueFeather.name, VueFeather)
+  // Vue.component('vue-feather', VueFeather)
 
   Vue.component('Layout', DefaultLayout)
 

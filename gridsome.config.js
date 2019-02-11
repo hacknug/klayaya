@@ -3,7 +3,7 @@
 
 module.exports = {
   siteName: 'KLaYaya',
-  siteUrl: 'https://dev.nestorvera.com/klayaya',
+  siteUrl: 'https://klayaya.netlify.com',
   siteDescription: 'Barcelona-based Netlabel, now archived.',
   titleTemplate: `%s - KLaYaya`,
 

@@ -2,17 +2,11 @@ import '~/assets/css/main.pcss'
 import '~/assets/img/logo.svg'
 
 import Fragment from 'vue-fragment'
-import VueFeather from 'vue-feather'
 
 import DefaultLayout from '~/layouts/Default.vue'
 
 export default function (Vue, { head }) {
   Vue.use(Fragment.Plugin)
-  // Vue.use(VueFeather)
-
-  // Vue.component(VueFeather.name, VueFeather)
-  Vue.component('feather', VueFeather)
-
   Vue.component('Layout', DefaultLayout)
 
   head.meta = [

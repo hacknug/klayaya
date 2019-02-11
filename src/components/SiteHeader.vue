@@ -11,37 +11,37 @@
 
         <li class="flex mb-1 rounded overflow-hidden">
           <g-link class="flex items-center w-full px-3 py-2" :to="{ name: 'home' }">
-            <feather class="mr-3" type="home"></feather> Inicio
+            <HomeIcon class="mr-3" /> Inicio
           </g-link>
         </li>
 
         <li class="flex mb-1 rounded overflow-hidden">
           <g-link class="flex items-center w-full px-3 py-2" :to="{ name: 'store' }">
-            <feather class="mr-3" type="shopping-bag"></feather> Tienda
+            <ShoppingBagIcon class="mr-3" /> Tienda
           </g-link>
         </li>
 
         <li class="flex mb-1 rounded overflow-hidden">
           <g-link class="flex items-center w-full px-3 py-2" :to="{ name: 'releases' }">
-            <feather class="mr-3" type="disc"></feather> Trabajos
+            <DiscIcon class="mr-3" /> Trabajos
           </g-link>
         </li>
 
         <li class="flex mb-1 rounded overflow-hidden">
           <g-link class="flex items-center w-full px-3 py-2" :to="{ name: 'videos' }">
-            <feather class="mr-3" type="video"></feather> Videos
+            <VideoIcon class="mr-3" /> Videos
           </g-link>
         </li>
 
         <li class="flex mb-1 rounded overflow-hidden">
           <g-link class="flex items-center w-full px-3 py-2" :to="{ name: 'archive' }">
-            <feather class="mr-3" type="archive"></feather> Archivo
+            <ArchiveIcon class="mr-3" /> Archivo
           </g-link>
         </li>
 
         <li class="flex mb-1 rounded overflow-hidden">
           <g-link class="flex items-center w-full px-3 py-2" :to="{ name: 'contact' }">
-            <feather class="mr-3" type="mail"></feather> Contacto
+            <MailIcon class="mr-3" /> Contacto
           </g-link>
         </li>
 
@@ -62,11 +62,14 @@ query Home {
 </static-query>
 
 <script>
+import { HomeIcon, ShoppingBagIcon, DiscIcon, VideoIcon, ArchiveIcon, MailIcon } from 'vue-feather-icons'
+
 import SocialLinks from '~/components/SocialLinks.vue'
 
 export default {
   name: 'SiteHeader',
   components: {
+    HomeIcon, ShoppingBagIcon, DiscIcon, VideoIcon, ArchiveIcon, MailIcon,
     SocialLinks
   }
 }
@@ -74,7 +77,7 @@ export default {
 
 <style lang="postcss">
 #header {
-  & i.feather svg { stroke-width: 1.5px; }
+  & svg { stroke-width: 1.5px; }
 
   & a {
     transition: background-color 0.125s ease-in-out;

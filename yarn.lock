@@ -1249,6 +1249,11 @@ babel-extract-comments@^1.0.0:
   dependencies:
     babylon "^6.18.0"
 
+babel-helper-vue-jsx-merge-props@^2.0.2:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/babel-helper-vue-jsx-merge-props/-/babel-helper-vue-jsx-merge-props-2.0.3.tgz#22aebd3b33902328e513293a8e4992b384f9f1b6"
+  integrity sha512-gsLiKK7Qrb7zYJNgiXKpXblxbV5ffSwR0f5whkPAaBAR4fhi6bwRZxX9wBlIc5M/v8CCkXUbXZL4N/nSE97cqg==
+
 babel-loader@8.0.5:
   version "8.0.5"
   resolved "https://registry.yarnpkg.com/babel-loader/-/babel-loader-8.0.5.tgz#225322d7509c2157655840bba52e46b6c2f2fe33"
@@ -9229,10 +9234,12 @@ vm-browserify@0.0.4:
   dependencies:
     indexof "0.0.1"
 
-vue-feather@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/vue-feather/-/vue-feather-1.0.0.tgz#e337d6b0e76e20f367b170850dc59a836725d44f"
-  integrity sha512-xwZbTroX08T4G9SOj7cRQ+h2IawBHYQpQGtNRfxPyeBpb+mb5xRyBNPZNBy4mc31LT6VvhZ7fa57le+W5WjPeg==
+vue-feather-icons@^4.10.0:
+  version "4.10.0"
+  resolved "https://registry.yarnpkg.com/vue-feather-icons/-/vue-feather-icons-4.10.0.tgz#84b699fe148b709ff3f609fc94eed44b078f1c27"
+  integrity sha512-fmL/v7DN9HYqnkR7h16PvoMgUk41kxqgqv7yPCAcW4nXRaX1dKgnLwm8m5R2Lpu0NxwpYzRKeTvOs+ti3KaqSg==
+  dependencies:
+    babel-helper-vue-jsx-merge-props "^2.0.2"
 
 vue-fragment@^1.5.0:
   version "1.5.0"

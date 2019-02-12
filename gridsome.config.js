@@ -16,7 +16,7 @@ module.exports = {
         options.plugins.unshift(
           ...[
             require('postcss-import'),
-            require('tailwindcss')('./tailwind.js'),
+            require('tailwindcss')('./tailwind.config.js'),
             require('postcss-preset-env')({
               stage: 0,
               autoprefixer: false,
@@ -30,7 +30,9 @@ module.exports = {
         )
 
         if (process.env.NODE_ENV === 'production') {
-          options.plugins.push(...[require('@fullhuman/postcss-purgecss')])
+          options.plugins.push(...[
+            require('@fullhuman/postcss-purgecss'),
+          ])
         }
 
         return options

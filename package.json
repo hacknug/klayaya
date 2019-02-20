@@ -7,18 +7,18 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
-    "@gridsome/source-wordpress": "^0.2.1",
-    "feather-icons": "^4.17.0",
-    "gridsome": "^0.4.7",
-    "vue-feather-icons": "^4.10.0",
-    "vue-fragment": "^1.5.0",
-    "vue-svg-inline-loader": "^1.2.11"
+    "@gridsome/source-wordpress": "0.2.1",
+    "feather-icons": "4.17.0",
+    "gridsome": "0.4.7",
+    "vue-feather-icons": "4.10.0",
+    "vue-fragment": "1.5.0",
+    "vue-svg-inline-loader": "1.2.11"
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^1.1.0",
-    "postcss-import": "^12.0.1",
-    "postcss-preset-env": "^6.5.0",
-    "tailwindcss": "^0.7.4",
-    "tailwindcss-alpha": "^0.1.4"
+    "@fullhuman/postcss-purgecss": "1.1.0",
+    "postcss-import": "12.0.1",
+    "postcss-preset-env": "6.5.0",
+    "tailwindcss": "0.7.4",
+    "tailwindcss-alpha": "0.1.4"
   }
 }

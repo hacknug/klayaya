@@ -627,7 +627,7 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
-"@fullhuman/postcss-purgecss@^1.1.0":
+"@fullhuman/postcss-purgecss@1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@fullhuman/postcss-purgecss/-/postcss-purgecss-1.1.0.tgz#fa423630e01b09604de42637f89eac72471b8961"
   integrity sha512-NaNJgn4ZtrWveVnele/eCW/AJYL6dwG6AW86QYQQsqOsXy8rHsA1LoDxuFye0a9PKA7lbH3h4/OxzMwkGDCqXQ==
@@ -649,7 +649,7 @@
     semver "^5.6.0"
     sort-package-json "^1.15.0"
 
-"@gridsome/source-wordpress@^0.2.1":
+"@gridsome/source-wordpress@0.2.1":
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/@gridsome/source-wordpress/-/source-wordpress-0.2.1.tgz#83979a9bb4267e97421fb4fd6e93b707190e1d03"
   integrity sha512-u5e59+IOrRc1baiyTJPqVGP2r5Eo59G0ZBFbKbn8GVV6mduWnYq344+MDUGY2YQg8x0baTJiMF3ZAtl/8XY35w==
@@ -3468,7 +3468,7 @@ fd-slicer@~1.1.0:
   dependencies:
     pend "~1.2.0"
 
-feather-icons@^4.17.0:
+feather-icons@4.17.0:
   version "4.17.0"
   resolved "https://registry.yarnpkg.com/feather-icons/-/feather-icons-4.17.0.tgz#45bd49d05134c6db1f8161c0fe648eb5fb7c4aea"
   integrity sha512-eAQCGeI9Dn57JRuzb7SfWYSj/v/PLoa7cZ1nqY3m0V8i+Q3pqJu6sXiKBRFTufT7s+7o6ZZkDsffh7dsnStSOg==
@@ -4077,7 +4077,7 @@ graphql@^0.13.2:
   dependencies:
     iterall "^1.2.1"
 
-gridsome@^0.4.7:
+gridsome@0.4.7:
   version "0.4.7"
   resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.4.7.tgz#877d09cc1bfa39729db98a4814c19d2d3747e288"
   integrity sha512-pFgS7mL93DVC9kEjLcjfJsKdv/ODpqK7xjT2BROrHENkdZF1CV0Vm4G4Tt3VJSic/7DtT4KD+jwOT4oiIPg+yQ==
@@ -6827,7 +6827,7 @@ postcss-image-set-function@^3.0.1:
     postcss "^7.0.2"
     postcss-values-parser "^2.0.0"
 
-postcss-import@^12.0.1:
+postcss-import@12.0.1:
   version "12.0.1"
   resolved "https://registry.yarnpkg.com/postcss-import/-/postcss-import-12.0.1.tgz#cf8c7ab0b5ccab5649024536e565f841928b7153"
   integrity sha512-3Gti33dmCjyKBgimqGxL3vcV8w9+bsHwO5UrBawp796+jdardbcFl4RP5w/76BwNL7aGzpKstIfF9I+kdE8pTw==
@@ -7056,7 +7056,7 @@ postcss-place@^4.0.1:
     postcss "^7.0.2"
     postcss-values-parser "^2.0.0"
 
-postcss-preset-env@^6.5.0:
+postcss-preset-env@6.5.0:
   version "6.5.0"
   resolved "https://registry.yarnpkg.com/postcss-preset-env/-/postcss-preset-env-6.5.0.tgz#a14b8f6e748b2a3a4a02a56f36c390f30073b9e1"
   integrity sha512-RdsIrYJd9p9AouQoJ8dFP5ksBJEIegA4q4WzJDih8nevz3cZyIP/q1Eaw3pTVpUAu3n7Y32YmvAW3X07mSRGkw==
@@ -8605,14 +8605,14 @@ svgo@^1.1.1:
     unquote "~1.1.1"
     util.promisify "~1.0.0"
 
-tailwindcss-alpha@^0.1.4:
+tailwindcss-alpha@0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/tailwindcss-alpha/-/tailwindcss-alpha-0.1.4.tgz#ae892fa96788f2a911ad2f594fe90a4804574b83"
   integrity sha512-S+NgYZSclS1a55q6e4I3GXnyE4qBOVuclT06xTeUobeTgIXR1mGvBY06AarInY/Fc6jdfh6Mqha68X0Ly+Gkiw==
   dependencies:
     color "^3.0.0"
 
-tailwindcss@^0.7.4:
+tailwindcss@0.7.4:
   version "0.7.4"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-0.7.4.tgz#fb7926821d42eacdc12e6621a49d21f37a3ff9e9"
   integrity sha512-+GeQjHRJ2VmeLkrNwMCbPDfm2cc5P8eoc7n+DtZfI8oQdlo5eSHqsIlPEuZOtoqQlIALsd2jAggWrUUBFGP2ow==
@@ -9234,14 +9234,14 @@ vm-browserify@0.0.4:
   dependencies:
     indexof "0.0.1"
 
-vue-feather-icons@^4.10.0:
+vue-feather-icons@4.10.0:
   version "4.10.0"
   resolved "https://registry.yarnpkg.com/vue-feather-icons/-/vue-feather-icons-4.10.0.tgz#84b699fe148b709ff3f609fc94eed44b078f1c27"
   integrity sha512-fmL/v7DN9HYqnkR7h16PvoMgUk41kxqgqv7yPCAcW4nXRaX1dKgnLwm8m5R2Lpu0NxwpYzRKeTvOs+ti3KaqSg==
   dependencies:
     babel-helper-vue-jsx-merge-props "^2.0.2"
 
-vue-fragment@^1.5.0:
+vue-fragment@1.5.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/vue-fragment/-/vue-fragment-1.5.0.tgz#7739463b7680633f2b671aec9f1bfdd9a436da33"
   integrity sha512-nobmbbOSOx59fm7U00BDz14Yvqitwx7NPQGYDTKg3+dNDGTDCRNy/q2kfr5hV4S0l4fQG0kvC+rbCmENLmHUSA==
@@ -9299,7 +9299,7 @@ vue-style-loader@^4.1.0:
     hash-sum "^1.0.2"
     loader-utils "^1.0.2"
 
-vue-svg-inline-loader@^1.2.11:
+vue-svg-inline-loader@1.2.11:
   version "1.2.11"
   resolved "https://registry.yarnpkg.com/vue-svg-inline-loader/-/vue-svg-inline-loader-1.2.11.tgz#bdc5b1a0bd871ad25174e8bfff920f5b141591ef"
   integrity sha512-yIhDAsRlfSm3+ji2pF3u2obrE+25BLClabX2qbKWRBveeXKksTXfCNqIufiMyCTBq2FsCrdZaj2HCuJ5U2JzuQ==

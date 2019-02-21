@@ -2,7 +2,7 @@
   <fragment>
 
     <SiteHeader />
-    <main class="px-4 py-8"><slot /></main>
+    <main class="flex flex-col w-full px-4 py-8 bg-grey-lightest"><slot /></main>
 
   </fragment>
 </template>

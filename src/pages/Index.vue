@@ -3,22 +3,14 @@
 
     <h1 class="clip">KLaYaya</h1>
 
-    <ul class="list-reset flex flex-wrap">
-      <li class="w-full xl:w-1/2 px-4" v-for="{ node } in $page.allWordPressPost.edges" :key="node.id">
-        <article class="mb-16 border-t">
-
-          <h2 class="my-6 text-5xl leading-none">
-            <router-link :to="node.path" v-html="node.title" />
-          </h2>
-
-          <section v-html="node.excerpt" />
-
-        </article>
-      </li>
-    </ul>
+    <masonry :cols="{default: 4, 1920: 3, 1280: 2, 640: 1}" :gutter="30" class="px-6">
+      <div v-for="{ node } in $page.allWordPressPost.edges" :key="node.id">
+        <PostCard :node="node" />
+      </div>
+    </masonry>
 
     <Pager
-      class="flex justify-center -mx-2 text-xl"
+      class="flex justify-center mt-auto -mx-2 text-xl"
       linkClass="mx-2 text-red"
       prevLabel="Anterior"
       nextLabel="Siguiente"
@@ -42,6 +34,11 @@
           path
           excerpt
           content
+          format
+          featuredMedia {
+            id
+            sourceUrl
+          }
         }
       }
     }
@@ -50,10 +47,11 @@
 
 <script>
   import { Pager } from 'gridsome'
+  import PostCard from '~/components/PostCard.vue'
 
   export default {
     components: {
-      Pager
+      Pager, PostCard
     }
   }
 </script>

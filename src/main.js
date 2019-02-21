@@ -2,11 +2,14 @@ import '~/assets/css/main.pcss'
 import '~/assets/img/logo.svg'
 
 import Fragment from 'vue-fragment'
+import VueMasonry from 'vue-masonry-css'
 
 import DefaultLayout from '~/layouts/Default.vue'
 
 export default function (Vue, { head }) {
   Vue.use(Fragment.Plugin)
+  Vue.use(VueMasonry)
+
   Vue.component('Layout', DefaultLayout)
 
   head.meta = [

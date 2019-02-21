@@ -9,7 +9,7 @@
       <router-link :to="node.path" v-html="node.title" />
     </h2>
 
-    <section v-if="node.excerpt" class="mt-6" v-html="node.excerpt" />
+    <section v-if="node.excerpt" class="mt-6 break-words" v-html="node.excerpt" />
 
   </article>
 </template>
@@ -18,11 +18,11 @@
 export default {
   name: 'PostCard',
   props: { node: Object },
-  data: function () {
+  data() {
     return {
       classes: {
         article: [
-          'flex flex-col mb-12 p-6 pb-8',
+          'flex flex-col p-6 pb-8',
           this.node.format === 'link' ? 'text-white bg-black' : 'border-black border-t-4 bg-white',
           'rounded-b shadow hover:shadow-md',
         ],
@@ -31,3 +31,8 @@ export default {
   },
 }
 </script>
+
+<style lang="postcss">
+/* TODO: Use Tailwind for this once updated */
+article section { word-break: break-all; }
+</style>

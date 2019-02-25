@@ -2,7 +2,12 @@
   <fragment>
 
     <SiteHeader />
-    <main class="flex flex-col w-full px-4 py-8 bg-grey-lightest"><slot /></main>
+    <main :class="[
+      'flex flex-col w-full px-4 py-8',
+      $store.state.activeTheme === 'light'
+        ? 'bg-grey-lightest'
+        : 'bg-grey-darkest',
+    ]"><slot /></main>
 
   </fragment>
 </template>
@@ -11,8 +16,6 @@
 import SiteHeader from '~/components/SiteHeader.vue'
 
 export default {
-  components: {
-    SiteHeader
-  }
+  components: { SiteHeader },
 }
 </script>

@@ -6,11 +6,15 @@ import VueMasonry from 'vue-masonry-css'
 
 import DefaultLayout from '~/layouts/Default.vue'
 
-export default function (Vue, { head }) {
+import store from '~/store'
+
+export default function (Vue, { appOptions, head }) {
   Vue.use(Fragment.Plugin)
   Vue.use(VueMasonry)
 
   Vue.component('Layout', DefaultLayout)
+
+  appOptions.store = store
 
   head.meta = [
     { charset: 'utf-8' },

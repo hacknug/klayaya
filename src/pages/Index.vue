@@ -52,9 +52,7 @@
   import PostCard from '~/components/PostCard.vue'
 
   export default {
-    components: {
-      Pager, PostCard
-    }
+    components: { Pager, PostCard },
   }
 </script>
 

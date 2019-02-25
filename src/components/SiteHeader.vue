@@ -48,6 +48,7 @@
       </ul>
     </nav>
 
+    <ThemeSwitcher />
     <SocialLinks class="mt-auto" />
 
   </header>
@@ -64,14 +65,15 @@ query Home {
 <script>
 import { HomeIcon, ShoppingBagIcon, DiscIcon, VideoIcon, ArchiveIcon, MailIcon } from 'vue-feather-icons'
 
+import ThemeSwitcher from '~/components/ThemeSwitcher.vue'
 import SocialLinks from '~/components/SocialLinks.vue'
 
 export default {
   name: 'SiteHeader',
   components: {
     HomeIcon, ShoppingBagIcon, DiscIcon, VideoIcon, ArchiveIcon, MailIcon,
-    SocialLinks
-  }
+    ThemeSwitcher, SocialLinks,
+  },
 }
 </script>
 

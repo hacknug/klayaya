@@ -1,8 +1,15 @@
 module.exports = {
-  content: ['./src/**/*.vue'],
+  content: [
+    './src/**/*.html',
+    './src/**/*.svg',
+    './src/**/*.pcss',
+    './src/**/*.css',
+    './src/**/*.js',
+    './src/**/*.vue',
+  ],
   whitelist: ['html', 'body', 'markdown'],
   extractors: [{
-    extensions: ['vue'],
+    extensions: ['html', 'svg', 'pcss', 'css', 'js', 'vue'],
     extractor: class TailwindExtractor {
       static extract(content) {
         return content.match(/[A-z0-9-:\/]+/g) || []

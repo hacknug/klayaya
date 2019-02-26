@@ -1,11 +1,15 @@
 <template>
-  <ul class="list-reset flex mt-16 -mx-1">
+  <ul class="list-reset flex mt-16 -m-3">
 
-    <li v-for="theme in themes" :key="theme" :class="[ 'm-1', theme === getActiveTheme ? 'opacity-100' : 'opacity-50' ]">
+    <li
+      v-for="(theme, name) in themes"
+      v-if="name !== getActiveTheme"
+      class="m-1 bg-grey-darkest-25 rounded overflow-hidden"
+      :key="name">
 
-      <button class="flex p-1 border rounded-full overflow-hidden" @click="setActiveTheme(theme)">
-        <span class="clip">{{ theme }}</span>
-        <span class="block w-6 h-6 bg-white rounded-full"></span>
+      <button class="flex p-2" @click="setActiveTheme(name, $event)">
+        <span class="clip">{{ `${name} Theme`|capitalize }}</span>
+        <component :is="theme.icon"></component>
       </button>
 
     </li>
@@ -19,8 +23,9 @@ import { mapState, mapGetters } from 'vuex'
 export default {
   name: 'ThemeSwitcher',
   methods: {
-    setActiveTheme(theme) {
+    setActiveTheme(theme, event) {
       this.$store.commit('SET_ACTIVE_THEME', theme)
+      event.currentTarget.blur()
     },
   },
   computed: {

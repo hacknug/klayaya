@@ -14,6 +14,12 @@ export default function (Vue, { appOptions, head }) {
 
   Vue.component('Layout', DefaultLayout)
 
+  Vue.filter('capitalize', function (value) {
+    if (!value) return ''
+    value = value.toString()
+    return value.charAt(0).toUpperCase() + value.slice(1)
+  })
+
   appOptions.store = store
 
   head.meta = [

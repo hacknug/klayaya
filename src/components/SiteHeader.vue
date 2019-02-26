@@ -48,8 +48,10 @@
       </ul>
     </nav>
 
-    <ThemeSwitcher />
-    <SocialLinks class="mt-auto" />
+    <div class="flex justify-between items-baseline mt-auto">
+      <SocialLinks />
+      <ThemeSwitcher />
+    </div>
 
   </header>
 </template>
@@ -81,7 +83,7 @@ export default {
 #header {
   & svg { stroke-width: 1.5px; }
 
-  & a {
+  & :matches(a, button) {
     transition: background-color 0.125s ease-in-out;
     &:hover { @apply bg-grey-darkest-25; }
     &:focus { @apply bg-grey-darkest-50; }

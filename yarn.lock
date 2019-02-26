@@ -7962,6 +7962,13 @@ tailwindcss-alpha@0.1.4:
   dependencies:
     color "^3.0.0"
 
+tailwindcss-multi-column@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/tailwindcss-multi-column/-/tailwindcss-multi-column-0.2.0.tgz#2390ba326c0e0b2081a8f7b435a2f2da0c832114"
+  integrity sha512-tMDTydzqGK6qQnNol34Vajh6dJ12KG6BkfitrmPMNg/C8nx8mopJETUil8Vi0evtDVp144vPHGi7vGomYlDRfg==
+  dependencies:
+    lodash "^4.17.10"
+
 tailwindcss@0.7.4:
   version "0.7.4"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-0.7.4.tgz#fb7926821d42eacdc12e6621a49d21f37a3ff9e9"

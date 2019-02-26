@@ -3,7 +3,7 @@
 
     <h1 class="clip">KLaYaya</h1>
 
-    <masonry :cols="{default: 4, 1920: 3, 1280: 2, 640: 1}" :gutter="30" class="mb-12 px-6">
+    <masonry :cols="{ default: 4, 1920: 3, 1280: 2, 640: 1 }" :gutter="30" class="mb-12 px-2 md:px-6">
       <div v-for="{ node } in $page.allWordPressPost.edges" class="mb-12" :key="node.id">
         <PostCard :node="node" />
       </div>
@@ -62,6 +62,11 @@ footer {
     @apply rounded overflow-hidden;
 
     transition: background-color 0.125s ease-in-out;
+
+    &:not(:first-of-type, :last-of-type) {
+      @apply hidden;
+      @screen md { @apply block; }
+    }
 
     &:hover { @apply bg-grey-light-25; }
     &:focus { @apply bg-grey-light-50; }

@@ -1,47 +1,47 @@
 <template>
-  <header id="header" class="sticky pin-t flex flex-col flex-no-shrink w-full md:max-w-xs h-screen p-8 text-white bg-black">
+  <header id="header" class="md:sticky pin-t flex flex-col flex-no-shrink w-full md:max-w-xs h-screen p-8 text-white bg-black">
 
-    <g-link :to="{ name: 'home' }" class="flex w-64 h-64 -mx-3 p-3 rounded-full overflow-hidden">
+    <g-link :to="{ name: 'home' }" class="flex w-32 md:w-64 h-32 md:h-64 -mx-3 p-3 rounded-full overflow-hidden">
       <h1 class="clip">{{ $static.metaData.siteName }}</h1>
       <img svg-inline svg-sprite class="block fill-current" src="../assets/img/logo.svg" :alt="$static.metaData.siteName + ' logo'" />
     </g-link>
 
-    <nav class="flex flex-col mt-16 text-xl">
-      <ul class="list-reset -mx-3">
+    <nav class="flex flex-col my-8 md:my-16 text-xl">
+      <ul class="list-reset -mx-3 col-count-2 md:col-count-auto">
 
         <li class="flex mb-1 rounded overflow-hidden">
           <g-link class="flex items-center w-full px-3 py-2" :to="{ name: 'home' }">
-            <HomeIcon class="mr-3" /> Inicio
+            <HomeIcon class="flex-no-shrink mr-3" /> Inicio
           </g-link>
         </li>
 
         <li class="flex mb-1 rounded overflow-hidden">
           <g-link class="flex items-center w-full px-3 py-2" :to="{ name: 'store' }">
-            <ShoppingBagIcon class="mr-3" /> Tienda
+            <ShoppingBagIcon class="flex-no-shrink mr-3" /> Tienda
           </g-link>
         </li>
 
         <li class="flex mb-1 rounded overflow-hidden">
           <g-link class="flex items-center w-full px-3 py-2" :to="{ name: 'releases' }">
-            <DiscIcon class="mr-3" /> Trabajos
+            <DiscIcon class="flex-no-shrink mr-3" /> Trabajos
           </g-link>
         </li>
 
         <li class="flex mb-1 rounded overflow-hidden">
           <g-link class="flex items-center w-full px-3 py-2" :to="{ name: 'videos' }">
-            <VideoIcon class="mr-3" /> Videos
+            <VideoIcon class="flex-no-shrink mr-3" /> Videos
           </g-link>
         </li>
 
         <li class="flex mb-1 rounded overflow-hidden">
           <g-link class="flex items-center w-full px-3 py-2" :to="{ name: 'archive' }">
-            <ArchiveIcon class="mr-3" /> Archivo
+            <ArchiveIcon class="flex-no-shrink mr-3" /> Archivo
           </g-link>
         </li>
 
         <li class="flex mb-1 rounded overflow-hidden">
           <g-link class="flex items-center w-full px-3 py-2" :to="{ name: 'contact' }">
-            <MailIcon class="mr-3" /> Contacto
+            <MailIcon class="flex-no-shrink mr-3" /> Contacto
           </g-link>
         </li>
 

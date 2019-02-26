@@ -433,6 +433,10 @@ module.exports = {
     //   // padding: '1rem',
     // }),
     require('tailwindcss-alpha')(),
+    require('tailwindcss-multi-column')({
+      counts: ['auto', 1, 2],
+      variants: ['responsive'],
+    }),
   ],
 
   options: {

@@ -31,6 +31,6 @@ export default function (Vue, { appOptions, head }) {
 
   head.bodyAttrs = {
     ...head.bodyAttrs,
-    class: 'flex min-h-screen text-black text-base leading-normal font-sans'
+    class: 'md:flex min-h-screen text-black text-base leading-normal font-sans'
   }
 }

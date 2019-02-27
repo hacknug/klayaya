@@ -2176,17 +2176,7 @@ copy-descriptor@^0.1.0:
   resolved "https://registry.yarnpkg.com/copy-descriptor/-/copy-descriptor-0.1.1.tgz#676f6eb3c39997c2ee1ac3a924fd6124748f578d"
   integrity sha1-Z29us8OZl8LuGsOpJP1hJHSPV40=
 
-core-js@^2.4.0, core-js@^2.5.7:
-  version "2.6.2"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.2.tgz#267988d7268323b349e20b4588211655f0e83944"
-  integrity sha512-NdBPF/RVwPW6jr0NCILuyN9RiqLo2b1mddWHkUL+VnvcB7dzlnBJ1bXYntjpTGOgkZiiLWj2JxmOr7eGE3qK6g==
-
-core-js@^2.5.3:
-  version "2.6.4"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.4.tgz#b8897c062c4d769dd30a0ac5c73976c47f92ea0d"
-  integrity sha512-05qQ5hXShcqGkPZpXEFLIpxayZscVD2kuMBZewxiIPPEagukO4mqgPA9CWhUvFBJfy3ODdK2p9xyHh7FTU9/7A==
-
-core-js@^2.6.5:
+core-js@^2.4.0, core-js@^2.5.3, core-js@^2.5.7, core-js@^2.6.5:
   version "2.6.5"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.5.tgz#44bc8d249e7fb2ff5d00e0341a7ffb94fbf67895"
   integrity sha512-klh/kDpwX8hryYL14M9w/xei6vrv6sE8gTHDG7/T/+SEovB/G4ejwcfE/CBzO6Edsu+OETZMZ3wcX/EjUkrl5A==
@@ -3294,10 +3284,10 @@ fd-slicer@~1.1.0:
   dependencies:
     pend "~1.2.0"
 
-feather-icons@4.17.0:
-  version "4.17.0"
-  resolved "https://registry.yarnpkg.com/feather-icons/-/feather-icons-4.17.0.tgz#45bd49d05134c6db1f8161c0fe648eb5fb7c4aea"
-  integrity sha512-eAQCGeI9Dn57JRuzb7SfWYSj/v/PLoa7cZ1nqY3m0V8i+Q3pqJu6sXiKBRFTufT7s+7o6ZZkDsffh7dsnStSOg==
+feather-icons@4.19.0:
+  version "4.19.0"
+  resolved "https://registry.yarnpkg.com/feather-icons/-/feather-icons-4.19.0.tgz#320db46860826bbe37e824e0e759cb4a1d9de6f0"
+  integrity sha512-eaY8A/Y2lLukjinbWYrCxMof7EiFUgEXqYLqInsNFJtxMoLZf0znhK+y93YMojsB/etKMzj8PISnI1+OADJ5Zw==
   dependencies:
     classnames "^2.2.5"
     core-js "^2.5.3"

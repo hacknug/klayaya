@@ -1,5 +1,5 @@
 <template>
-  <header id="header" class="md:sticky pin-t flex flex-col flex-no-shrink w-full md:max-w-xs h-screen p-8 text-white bg-black">
+  <header id="header" class="md:sticky pin-t flex flex-col flex-no-shrink w-full md:max-w-xs md:h-screen p-8 text-white bg-black">
 
     <g-link :to="{ name: 'home' }" class="flex w-32 md:w-64 h-32 md:h-64 -mx-3 p-3 rounded-full overflow-hidden">
       <h1 class="clip">{{ $static.metaData.siteName }}</h1>

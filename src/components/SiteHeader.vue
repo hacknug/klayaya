@@ -22,6 +22,12 @@
         </li>
 
         <li class="flex mb-1 rounded overflow-hidden">
+          <g-link class="flex items-center w-full px-3 py-2" :to="{ name: 'contact' }">
+            <MailIcon class="flex-no-shrink mr-3" /> Contacto
+          </g-link>
+        </li>
+
+        <li class="flex mb-1 rounded overflow-hidden">
           <g-link class="flex items-center w-full px-3 py-2" :to="{ name: 'releases' }">
             <DiscIcon class="flex-no-shrink mr-3" /> Trabajos
           </g-link>
@@ -36,12 +42,6 @@
         <li class="flex mb-1 rounded overflow-hidden">
           <g-link class="flex items-center w-full px-3 py-2" :to="{ name: 'archive' }">
             <ArchiveIcon class="flex-no-shrink mr-3" /> Archivo
-          </g-link>
-        </li>
-
-        <li class="flex mb-1 rounded overflow-hidden">
-          <g-link class="flex items-center w-full px-3 py-2" :to="{ name: 'contact' }">
-            <MailIcon class="flex-no-shrink mr-3" /> Contacto
           </g-link>
         </li>
 

@@ -5,7 +5,7 @@
       <g-image class="block" :src="node.featuredMedia.sourceUrl" />
     </figure>
 
-    <h2 class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-tight">
+    <h2 class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-tight md:leading-none">
       <router-link :to="node.path" v-html="node.title" />
     </h2>
 
@@ -18,16 +18,18 @@
 export default {
   name: 'PostCard',
   props: { node: Object },
-  data() {
-    return {
-      classes: {
+  computed: {
+    classes() {
+      return {
         article: [
           'flex flex-col px-4 md:px-6 py-6 md:py-8',
-          this.node.format === 'link' ? 'text-white bg-black' : 'border-black border-t-4 bg-white',
+          this.$store.state.activeTheme === 'light'
+            ? this.node.format === 'link' ? 'text-white bg-black' : 'border-black border-t-4 bg-white'
+            : this.node.format === 'link' ? 'text-black bg-white' : 'border-white border-t-4 bg-black',
           'rounded-b shadow hover:shadow-md',
         ],
-      },
-    }
+      }
+    },
   },
 }
 </script>

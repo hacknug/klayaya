@@ -12,10 +12,10 @@
     <footer class="flex justify-center mt-auto -mx-2 text-xl">
       <Pager
         class="flex p-3 bg-white shadow rounded"
+        :info="$page.allWordPressPost.pageInfo"
         linkClass="inline-block mx-1 px-3 py-1"
         prevLabel="Anterior"
         nextLabel="Siguiente"
-        :info="$page.allWordPressPost.pageInfo"
       />
     </footer>
 
@@ -63,7 +63,7 @@ footer {
 
     transition: background-color 0.125s ease-in-out;
 
-    &:not(:first-of-type, :last-of-type) {
+    &:matches([aria-label*="Current page"], [aria-label*="Go to page"]) {
       @apply hidden;
       @screen md { @apply block; }
     }

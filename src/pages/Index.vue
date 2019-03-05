@@ -10,13 +10,7 @@
     </masonry>
 
     <footer class="flex justify-center mt-auto -mx-2 text-xl">
-      <Pager
-        class="flex p-3 bg-white shadow rounded"
-        :info="$page.allWordPressPost.pageInfo"
-        linkClass="inline-block mx-1 px-3 py-1"
-        prevLabel="Anterior"
-        nextLabel="Siguiente"
-      />
+      <BasePager :info="$page.allWordPressPost.pageInfo"></BasePager>
     </footer>
 
   </Layout>
@@ -48,30 +42,10 @@
 </page-query>
 
 <script>
-  import { Pager } from 'gridsome'
-  import PostCard from '~/components/PostCard.vue'
+import PostCard from '~/components/PostCard.vue'
+import BasePager from '~/components/BasePager.vue'
 
-  export default {
-    components: { Pager, PostCard },
-  }
-</script>
-
-<style lang="postcss">
-footer {
-  & a {
-    @apply rounded overflow-hidden;
-
-    transition: background-color 0.125s ease-in-out;
-
-    &:matches([aria-label*="Current page"], [aria-label*="Go to page"]) {
-      @apply hidden;
-      @screen md { @apply block; }
-    }
-
-    &:hover { @apply bg-grey-light-25; }
-    &:focus { @apply bg-grey-light-50; }
-
-    &.active.active--exact { @apply text-white bg-black; }
-  }
+export default {
+  components: { PostCard, BasePager },
 }
-</style>
+</script>

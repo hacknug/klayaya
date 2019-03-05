@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <ul class="list-reset flex flex-wrap -m-3">
+    <ul class="list-reset flex flex-wrap">
 
       <li class="flex m-1 rounded overflow-hidden">
         <a class="flex p-2" href="//www.instagram.com/klayaya13">

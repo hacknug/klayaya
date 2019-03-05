@@ -1,56 +1,28 @@
 <template>
-  <header id="header" class="md:sticky pin-t flex flex-col flex-no-shrink w-full md:max-w-xs md:h-screen p-8 text-white bg-black">
+  <header id="header" class="md:sticky pin-t flex flex-wrap md:flex-col flex-no-shrink justify-between w-full md:max-w-xs md:h-screen p-6 md:p-8 text-white bg-black">
 
     <g-link :to="{ name: 'home' }" class="flex w-32 md:w-64 h-32 md:h-64 -mx-3 p-3 rounded-full overflow-hidden">
       <h1 class="clip">{{ $static.metaData.siteName }}</h1>
-      <img svg-inline svg-sprite class="block fill-current" src="../assets/img/logo.svg" :alt="$static.metaData.siteName + ' logo'" />
+      <img svg-inline class="block w-full fill-current" src="../assets/img/logo.svg" :alt="$static.metaData.siteName + ' logo'" />
     </g-link>
 
-    <nav class="flex flex-col my-8 md:my-16 text-xl">
-      <ul class="list-reset -mx-3 col-count-2 md:col-count-auto">
-
-        <li class="flex mb-1 rounded overflow-hidden">
-          <g-link class="flex items-center w-full px-3 py-2" :to="{ name: 'home' }">
-            <HomeIcon class="flex-no-shrink mr-3" /> Inicio
-          </g-link>
-        </li>
-
-        <li class="flex mb-1 rounded overflow-hidden">
-          <g-link class="flex items-center w-full px-3 py-2" :to="{ name: 'store' }">
-            <ShoppingBagIcon class="flex-no-shrink mr-3" /> Tienda
-          </g-link>
-        </li>
-
-        <li class="flex mb-1 rounded overflow-hidden">
-          <g-link class="flex items-center w-full px-3 py-2" :to="{ name: 'contact' }">
-            <MailIcon class="flex-no-shrink mr-3" /> Contacto
-          </g-link>
-        </li>
-
-        <li class="flex mb-1 rounded overflow-hidden">
-          <g-link class="flex items-center w-full px-3 py-2" :to="{ name: 'releases' }">
-            <DiscIcon class="flex-no-shrink mr-3" /> Trabajos
-          </g-link>
-        </li>
-
-        <li class="flex mb-1 rounded overflow-hidden">
-          <g-link class="flex items-center w-full px-3 py-2" :to="{ name: 'videos' }">
-            <VideoIcon class="flex-no-shrink mr-3" /> Videos
-          </g-link>
-        </li>
-
-        <li class="flex mb-1 rounded overflow-hidden">
-          <g-link class="flex items-center w-full px-3 py-2" :to="{ name: 'archive' }">
-            <ArchiveIcon class="flex-no-shrink mr-3" /> Archivo
-          </g-link>
-        </li>
-
+    <nav :class="classes.nav">
+      <ul :class="classes.list">
+        <li :class="classes.item"><g-link :class="classes.link" :to="{ name: 'home' }"><HomeIcon :class="classes.icon" /> Inicio</g-link></li>
+        <li :class="classes.item"><g-link :class="classes.link" :to="{ name: 'store' }"><ShoppingBagIcon :class="classes.icon" /> Tienda</g-link></li>
+        <li :class="classes.item"><g-link :class="classes.link" :to="{ name: 'contact' }"><MailIcon :class="classes.icon" /> Contacto</g-link></li>
+        <li :class="classes.item"><g-link :class="classes.link" :to="{ name: 'releases' }"><DiscIcon :class="classes.icon" /> Trabajos</g-link></li>
+        <li :class="classes.item"><g-link :class="classes.link" :to="{ name: 'videos' }"><VideoIcon :class="classes.icon" /> Videos</g-link></li>
+        <li :class="classes.item"><g-link :class="classes.link" :to="{ name: 'archive' }"><ArchiveIcon :class="classes.icon" /> Archivo</g-link></li>
       </ul>
     </nav>
 
-    <div class="flex justify-between items-baseline mt-auto">
+    <div class="flex flex-col-reverse md:flex-row justify-between items-end md:items-baseline -m-3 md:mt-auto">
       <SocialLinks />
-      <ThemeSwitcher />
+      <div class="flex">
+        <ThemeSwitcher />
+        <button @click="isMenuOpen = !isMenuOpen" :class="classes.button">Menu</button>
+      </div>
     </div>
 
   </header>
@@ -75,6 +47,29 @@ export default {
   components: {
     HomeIcon, ShoppingBagIcon, DiscIcon, VideoIcon, ArchiveIcon, MailIcon,
     ThemeSwitcher, SocialLinks,
+  },
+  data() {
+    return {
+      isMenuOpen: false,
+      // TODO: Add config to Vue.prototype: https://discordapp.com/channels/476372673564246017/504192730667155466/552423644073164800
+      mediaQuery: window.matchMedia('(min-width: 768px)'),
+    }
+  },
+  computed: {
+    classes() {
+      return {
+        nav: [
+          'order-1 md:order-0',
+          this.isMenuOpen || this.mediaQuery.matches ? 'flex flex-col' : 'hidden md:flex',
+          'w-full mt-8 md:my-16 text-lg md:text-xl',
+        ],
+        list: [ 'list-reset -mx-3 col-gap-4 md:col-gap-0 col-count-2 md:col-count-auto' ],
+        item: [ 'flex mb-1' ],
+        link: [ 'flex items-center w-full px-3 py-2 rounded overflow-hidden' ],
+        icon: [ 'flex-no-shrink mr-3' ],
+        button: [ 'md:hidden m-1 px-3 py-2 leading-none rounded overflow-hidden' ],
+      }
+    },
   },
 }
 </script>

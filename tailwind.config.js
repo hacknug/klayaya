@@ -1,6 +1,21 @@
-let defaultConfig = require('tailwindcss/defaultConfig')()
+/* Utilities */
+const pxToRem = (px, base = 16) => `${px / base}rem`
+const getScaleValues = (step = 4, limit = 64) => {
+  let scale = {}
 
-let colors = {
+  Array(limit / step).fill()
+    .map((value, key) => pxToRem(key + 1))
+    .forEach((value, key) => {
+      scale[(key + 1) * step] = value
+    })
+
+  return scale
+}
+
+/* Config */
+const defaultConfig = require('tailwindcss/defaultConfig')()
+
+const colors = {
   'transparent': 'transparent',
   'current': 'currentColor',
 
@@ -85,6 +100,31 @@ let colors = {
   'pink-light': '#fa7ea8',
   'pink-lighter': '#ffbbca',
   'pink-lightest': '#ffebef',
+}
+
+const spacing = {
+  px: '1px',
+  '0': '0',
+  '1': pxToRem(4),
+  '2': pxToRem(8),
+  '3': pxToRem(12),
+  '4': pxToRem(16),
+  '5': pxToRem(20),
+  '6': pxToRem(24),
+  '8': pxToRem(32),
+  '10': pxToRem(40),
+  '12': pxToRem(48),
+  '16': pxToRem(64),
+  '20': pxToRem(80),
+  '24': pxToRem(96),
+  '32': pxToRem(128),
+}
+
+const sizing = {
+  auto: 'auto',
+  ...spacing,
+  '48': pxToRem(192),
+  '64': pxToRem(256),
 }
 
 module.exports = {
@@ -190,9 +230,10 @@ module.exports = {
     '8': '8px',
   },
 
-  borderColors: global.Object.assign({
+  borderColors: {
     default: colors['current'],
-  }, colors),
+    ...colors,
+  },
 
   borderRadius: {
     'none': '0',
@@ -203,22 +244,7 @@ module.exports = {
   },
 
   width: {
-    'auto': 'auto',
-    'px': '1px',
-    '1': '0.25rem',
-    '2': '0.5rem',
-    '3': '0.75rem',
-    '4': '1rem',
-    '5': '1.25rem',
-    '6': '1.5rem',
-    '8': '2rem',
-    '10': '2.5rem',
-    '12': '3rem',
-    '16': '4rem',
-    '24': '6rem',
-    '32': '8rem',
-    '48': '12rem',
-    '64': '16rem',
+    ...sizing,
     '1/2': '50%',
     '1/3': '33.33333%',
     '2/3': '66.66667%',
@@ -235,22 +261,7 @@ module.exports = {
   },
 
   height: {
-    'auto': 'auto',
-    'px': '1px',
-    '1': '0.25rem',
-    '2': '0.5rem',
-    '3': '0.75rem',
-    '4': '1rem',
-    '5': '1.25rem',
-    '6': '1.5rem',
-    '8': '2rem',
-    '10': '2.5rem',
-    '12': '3rem',
-    '16': '4rem',
-    '24': '6rem',
-    '32': '8rem',
-    '48': '12rem',
-    '64': '16rem',
+    ...sizing,
     'full': '100%',
     'screen': '100vh',
   },
@@ -285,58 +296,16 @@ module.exports = {
   },
 
   padding: {
-    'px': '1px',
-    '0': '0',
-    '1': '0.25rem',
-    '2': '0.5rem',
-    '3': '0.75rem',
-    '4': '1rem',
-    '5': '1.25rem',
-    '6': '1.5rem',
-    '8': '2rem',
-    '10': '2.5rem',
-    '12': '3rem',
-    '16': '4rem',
-    '20': '5rem',
-    '24': '6rem',
-    '32': '8rem',
+    ...spacing,
   },
 
   margin: {
     'auto': 'auto',
-    'px': '1px',
-    '0': '0',
-    '1': '0.25rem',
-    '2': '0.5rem',
-    '3': '0.75rem',
-    '4': '1rem',
-    '5': '1.25rem',
-    '6': '1.5rem',
-    '8': '2rem',
-    '10': '2.5rem',
-    '12': '3rem',
-    '16': '4rem',
-    '20': '5rem',
-    '24': '6rem',
-    '32': '8rem',
+    ...spacing,
   },
 
   negativeMargin: {
-    'px': '1px',
-    '0': '0',
-    '1': '0.25rem',
-    '2': '0.5rem',
-    '3': '0.75rem',
-    '4': '1rem',
-    '5': '1.25rem',
-    '6': '1.5rem',
-    '8': '2rem',
-    '10': '2.5rem',
-    '12': '3rem',
-    '16': '4rem',
-    '20': '5rem',
-    '24': '6rem',
-    '32': '8rem',
+    ...spacing,
   },
 
   shadows: {
@@ -428,14 +397,12 @@ module.exports = {
   },
 
   plugins: [
-    // require('tailwindcss/plugins/container')({
-    //   // center: true,
-    //   // padding: '1rem',
-    // }),
     require('tailwindcss-alpha')(),
+    require('tailwindcss-flexbox-order')(),
     require('tailwindcss-multi-column')({
-      counts: ['auto', 1, 2],
       variants: ['responsive'],
+      counts: ['auto', 1, 2],
+      gaps: { ...spacing },
     }),
   ],
 

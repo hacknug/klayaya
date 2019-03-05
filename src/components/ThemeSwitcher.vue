@@ -1,20 +1,22 @@
 <template>
-  <ul class="list-reset flex mt-16 -m-3">
+  <div>
+    <ul class="list-reset flex">
 
-    <li
-      v-for="(theme, name) in themes"
-      v-if="name !== getActiveTheme"
-      class="m-1 bg-grey-darkest-25 rounded overflow-hidden"
-      :key="name">
+      <li
+        v-for="(theme, name) in themes"
+        v-if="name !== getActiveTheme"
+        class="m-1 bg-grey-darkest-25 rounded overflow-hidden"
+        :key="name">
 
-      <button class="flex p-2" @click="setActiveTheme(name, $event)">
-        <span class="clip">{{ `${name} Theme`|capitalize }}</span>
-        <component :is="theme.icon"></component>
-      </button>
+        <button class="flex p-2" @click="setActiveTheme(name, $event)">
+          <span class="clip">{{ `${name} Theme`|capitalize }}</span>
+          <component :is="theme.icon"></component>
+        </button>
 
-    </li>
+      </li>
 
-  </ul>
+    </ul>
+  </div>
 </template>
 
 <script>

@@ -7829,6 +7829,13 @@ tailwindcss-alpha@0.1.4:
   dependencies:
     color "^3.0.0"
 
+tailwindcss-flexbox-order@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/tailwindcss-flexbox-order/-/tailwindcss-flexbox-order-1.0.0.tgz#e3cdc345400369e596ad031866d408db93ad465d"
+  integrity sha512-k0DgnFhqCmojmly+GvpMv4lb1VeoSN6F8lekab99VeQDT0CjeOK+/LRAu9oumL4vnFw6gAgLoyP5dtG5TlN/4w==
+  dependencies:
+    lodash "^4.17.10"
+
 tailwindcss-multi-column@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/tailwindcss-multi-column/-/tailwindcss-multi-column-0.2.0.tgz#2390ba326c0e0b2081a8f7b435a2f2da0c832114"

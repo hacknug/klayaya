@@ -20,7 +20,7 @@ export default {
           this.$store.state.activeTheme === 'light'
             ? 'text-grey-darkest bg-grey-lightest'
             : 'text-grey-lightest bg-grey-darkest',
-          'text-base leading-normal font-sans antialiased'
+          'text-base md:text-lg xl:text-xl leading-normal font-sans antialiased'
         ].join(' '),
       },
     }

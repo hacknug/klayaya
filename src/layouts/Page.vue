@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <article class="max-w-xl mx-auto"><slot /></article>
+    <article class="w-full max-w-xl mx-auto"><slot /></article>
   </Layout>
 </template>
 

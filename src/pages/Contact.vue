@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <PageLayout>
 
     <PageHeader>Contact</PageHeader>
 
@@ -12,7 +12,7 @@
       <BaseButton type="submit">Enviar</BaseButton>
     </BaseForm>
 
-  </Layout>
+  </PageLayout>
 </template>
 
 <script>

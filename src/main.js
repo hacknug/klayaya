@@ -5,6 +5,7 @@ import Fragment from 'vue-fragment'
 import VueMasonry from 'vue-masonry-css'
 
 import DefaultLayout from '~/layouts/Default.vue'
+import PageLayout from '~/layouts/Page.vue'
 
 import store from '~/store'
 
@@ -13,6 +14,7 @@ export default function (Vue, { appOptions, head }) {
   Vue.use(VueMasonry)
 
   Vue.component('Layout', DefaultLayout)
+  Vue.component('PageLayout', PageLayout)
 
   Vue.filter('capitalize', function (value) {
     if (!value) return ''

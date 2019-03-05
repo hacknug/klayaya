@@ -1,7 +1,7 @@
 <template>
   <Layout>
 
-    <PageHeader>Category: Videos</PageHeader>
+    <PageHeader title="Category: Videos" />
 
     <masonry :cols="{ default: 4, 1920: 3, 1280: 2, 640: 1 }" :gutter="30" class="mb-12 px-2 md:px-6">
       <div v-for="{ node } in $page.allWordPressPost.edges" class="mb-12" :key="node.id">

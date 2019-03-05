@@ -1,7 +1,7 @@
 <template>
   <header id="header" class="md:sticky pin-t flex flex-wrap md:flex-col flex-no-shrink justify-between w-full md:max-w-xs md:h-screen p-6 md:p-8 text-white bg-black">
 
-    <g-link :to="{ name: 'home' }" class="flex w-32 md:w-64 h-32 md:h-64 -mx-3 p-3 rounded-full overflow-hidden">
+    <g-link :to="{ name: 'home' }" class="flex w-32 md:w-64 h-32 md:h-64 -m-3 md:my-0 p-3 rounded-full overflow-hidden">
       <h1 class="clip">{{ $static.metaData.siteName }}</h1>
       <img svg-inline class="block w-full fill-current" src="../assets/img/logo.svg" :alt="$static.metaData.siteName + ' logo'" />
     </g-link>

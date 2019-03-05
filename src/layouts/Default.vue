@@ -18,8 +18,8 @@ export default {
         class: [
           'md:flex min-h-screen',
           this.$store.state.activeTheme === 'light'
-            ? 'text-black bg-grey-lightest'
-            : 'text-white bg-grey-darkest',
+            ? 'text-grey-darkest bg-grey-lightest'
+            : 'text-grey-lightest bg-grey-darkest',
           'text-base leading-normal font-sans antialiased'
         ].join(' '),
       },

@@ -1,11 +1,11 @@
 <template>
   <article :class="classes.article">
 
-    <figure v-if="node.featuredMedia" class="-mt-6 -mx-4 md:-mx-6 mb-6">
+    <figure v-if="node.featuredMedia" class="-mt-6 md:-mt-8 -mx-4 md:-mx-6 mb-6">
       <g-image class="block" :src="node.featuredMedia.sourceUrl" />
     </figure>
 
-    <h2 class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-tight md:leading-none">
+    <h2 :class="classes.h2">
       <router-link :to="node.path" v-html="node.title" />
     </h2>
 
@@ -24,9 +24,16 @@ export default {
         article: [
           'flex flex-col px-4 md:px-6 py-6 md:py-8',
           this.$store.state.activeTheme === 'light'
-            ? this.node.format === 'link' ? 'text-white bg-black' : 'border-black border-t-4 bg-white'
-            : this.node.format === 'link' ? 'text-black bg-white' : 'border-white border-t-4 bg-black',
+            ? this.node.format === 'link' ? 'bg-black' : 'border-black border-t-4 bg-white'
+            : this.node.format === 'link' ? 'bg-white' : 'border-white border-t-4 bg-black',
           'rounded-b shadow hover:shadow-md',
+        ],
+        h2: [
+          '-mt-1',
+          this.$store.state.activeTheme === 'light'
+            ? this.node.format === 'link' ? 'text-white' : 'text-black'
+            : this.node.format === 'link' ? 'text-black' : 'text-white',
+          'text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-tight md:leading-none',
         ],
       }
     },

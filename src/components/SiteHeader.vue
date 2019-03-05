@@ -80,16 +80,15 @@ export default {
 </script>
 
 <style lang="postcss">
-#header {
-  & svg { stroke-width: 1.5px; }
+  #header {
+    & svg { stroke-width: 1.5px; }
 
-  & :matches(a, button) {
-    transition: background-color 0.125s ease-in-out;
-    &:hover { @apply bg-grey-darkest-25; }
-    &:focus { @apply bg-grey-darkest-50; }
+    & :matches(a, button) {
+      transition: background-color 0.125s ease-in-out;
+      &:hover { @apply bg-grey-darkest-25; }
+      &:focus { @apply bg-grey-darkest-50; }
+    }
+
+    & li a.active.active--exact { @apply bg-grey-darkest-75; }
   }
-
-  & li a.active.active--exact { @apply bg-grey-darkest-75; }
-}
-
 </style>

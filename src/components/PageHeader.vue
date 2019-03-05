@@ -1,5 +1,5 @@
 <template>
-  <header class="mb-4">
+  <header class="mb-4 md:mb-8">
     <h1 class="text-3xl xl:text-5xl leading-tight md:leading-none font-medium" v-html="title" />
   </header>
 </template>

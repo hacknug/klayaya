@@ -1,7 +1,7 @@
 <template>
   <article :class="classes.article">
 
-    <figure v-if="node.featuredMedia" class="-mt-6 md:-mt-8 -mx-4 md:-mx-6 mb-6">
+    <figure v-if="node.featuredMedia" class="-mt-6 md:-mt-8 -mx-4 md:-mx-6 mb-6 md:mb-8">
       <g-image class="block" :src="node.featuredMedia.sourceUrl" />
     </figure>
 
@@ -36,7 +36,7 @@ export default {
           this.getActiveTheme === 'light'
             ? this.node.format === 'link' ? 'text-white' : 'text-black'
             : this.node.format === 'link' ? 'text-black' : 'text-white',
-          'text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-tight md:leading-none',
+          'text-xl md:text-2xl lg:text-3xl xl:text-4xl leading-tight md:leading-none',
         ],
       }
     },

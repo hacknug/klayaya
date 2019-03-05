@@ -1,7 +1,7 @@
 <template>
   <PageLayout>
     <PageHeader :title="$page.wordPressPost.title" />
-    <div v-html="$page.wordPressPost.content" />
+    <section v-html="$page.wordPressPost.content" />
   </PageLayout>
 </template>
 
@@ -21,3 +21,10 @@ export default {
   components: { PageHeader },
 }
 </script>
+
+<style lang="postcss">
+  section {
+    & a { text-decoration: underline; }
+    & * + * { @apply mt-6; }
+  }
+</style>

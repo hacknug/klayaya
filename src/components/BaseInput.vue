@@ -7,14 +7,14 @@
     </label>
 
     <textarea v-if="type === 'textarea'"
-      class="p-2 border border-grey focus:border-grey-dark rounded-sm"
+      class="p-2 border-2 border-grey-light focus:border-grey rounded-sm"
       :placeholder="placeholder"
       :required="required"
       :name="name"
     />
 
     <input v-else
-      class="p-2 border border-grey focus:border-grey-dark rounded-sm"
+      class="p-2 border-2 border-grey-light focus:border-grey rounded-sm"
       :placeholder="placeholder"
       :required="required"
       :type="type || 'text'"

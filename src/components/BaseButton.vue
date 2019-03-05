@@ -1,5 +1,5 @@
 <template>
-  <button class="px-4 py-3 text-white bg-black rounded" :type="type"><slot /></button>
+  <button class="px-4 py-3 text-white bg-black rounded shadow hover:shadow-md active:shadow" :type="type"><slot /></button>
 </template>
 
 <script>

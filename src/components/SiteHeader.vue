@@ -52,7 +52,9 @@ export default {
     return {
       isMenuOpen: false,
       // TODO: Add config to Vue.prototype: https://discordapp.com/channels/476372673564246017/504192730667155466/552423644073164800
-      mediaQuery: window.matchMedia('(min-width: 768px)'),
+      mediaQuery: () => {
+        return window ? window.matchMedia('(min-width: 768px)') : { matches: false }
+      },
     }
   },
   computed: {

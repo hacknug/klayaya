@@ -12,6 +12,9 @@ export default new Vuex.Store({
       dark: { icon: MoonIcon },
     },
   },
+  getters: {
+    getActiveTheme: (state) => state.activeTheme,
+  },
   mutations: {
     SET_ACTIVE_THEME(state, theme) {
       state.activeTheme = theme
@@ -20,7 +23,4 @@ export default new Vuex.Store({
   actions: {
 
   },
-  getters: {
-    getActiveTheme: state => state.activeTheme,
-  }
 })

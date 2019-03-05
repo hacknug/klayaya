@@ -15,22 +15,25 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+
 export default {
   name: 'PostCard',
   props: { node: Object },
   computed: {
+    ...mapGetters(['getActiveTheme']),
     classes() {
       return {
         article: [
           'flex flex-col px-4 md:px-6 py-6 md:py-8',
-          this.$store.state.activeTheme === 'light'
+          this.getActiveTheme === 'light'
             ? this.node.format === 'link' ? 'bg-black' : 'border-black border-t-4 bg-white'
             : this.node.format === 'link' ? 'bg-white' : 'border-white border-t-4 bg-black',
           'rounded-b shadow hover:shadow-md',
         ],
         h2: [
           '-mt-1',
-          this.$store.state.activeTheme === 'light'
+          this.getActiveTheme === 'light'
             ? this.node.format === 'link' ? 'text-white' : 'text-black'
             : this.node.format === 'link' ? 'text-black' : 'text-white',
           'text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-tight md:leading-none',

@@ -1,8 +1,8 @@
 <template>
-  <Layout>
-    <h1 v-html="$page.wordPressPost.title"/>
-    <div v-html="$page.wordPressPost.content"/>
-  </Layout>
+  <PageLayout>
+    <PageHeader :title="$page.wordPressPost.title" />
+    <div v-html="$page.wordPressPost.content" />
+  </PageLayout>
 </template>
 
 <page-query>
@@ -15,5 +15,9 @@
 </page-query>
 
 <script>
-  export default {}
+import PageHeader from '~/components/PageHeader.vue'
+
+export default {
+  components: { PageHeader },
+}
 </script>

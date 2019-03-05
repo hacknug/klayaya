@@ -1,7 +1,7 @@
 <template>
-  <Layout>
+  <PageLayout>
     ...
-  </Layout>
+  </PageLayout>
 </template>
 
 <page-query>

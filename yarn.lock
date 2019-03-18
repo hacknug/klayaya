@@ -8399,10 +8399,10 @@ vue-style-loader@^4.1.0:
     hash-sum "^1.0.2"
     loader-utils "^1.0.2"
 
-vue-svg-inline-loader@1.2.13:
-  version "1.2.13"
-  resolved "https://registry.yarnpkg.com/vue-svg-inline-loader/-/vue-svg-inline-loader-1.2.13.tgz#1aa209a437658c8b84503527ae07e65ded72c774"
-  integrity sha512-YkqPwy8l72bOQBbzrxYYb/hnBIavu/gdNmVX1PA2iyc6KqUEncNWyiFZCz+Ri2MCs/aT4SYxem5buvlsaZD+eg==
+vue-svg-inline-loader@1.2.15:
+  version "1.2.15"
+  resolved "https://registry.yarnpkg.com/vue-svg-inline-loader/-/vue-svg-inline-loader-1.2.15.tgz#762b7105354524749dda9e60bba8ce885613744f"
+  integrity sha512-LnP4zeZN36Hx7UniGgP7bCpKPAWpLWowFmzoGbOlWVAS2ciXtQIGHXvRoZKYxamNP4E8v+fWBguwyAHayd6h0g==
   dependencies:
     "@babel/polyfill" "^7.2.5"
     "@babel/runtime" "^7.3.4"

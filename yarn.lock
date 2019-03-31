@@ -677,10 +677,10 @@
   dependencies:
     purgecss "^1.0.0"
 
-"@gridsome/cli@^0.0.8":
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/@gridsome/cli/-/cli-0.0.8.tgz#494902b8fb53093113bed995790beae7ccd916ea"
-  integrity sha512-5jZr6SO7JChN4/oc7RIZ4vHH0dqlwTk8Ft+vUlFkhubakvADc+p6Chp8+mAI1h993hQm8fooXb8HBvXuZikpcA==
+"@gridsome/cli@^0.0.9":
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/@gridsome/cli/-/cli-0.0.9.tgz#8adc7b6c809dc85e5993bc496f2c6ee42930ad7c"
+  integrity sha512-2QilnFymV03k1KxLbZYVA2IMQaQTMA3eBIcHhHRkxPhLYO9mbhoB1GJYKjKU3m7Ng1g4FwCnO7Imqaf2fYV5ow==
   dependencies:
     "@hjvedvik/tasks" "^0.0.8"
     chalk "^2.4.1"
@@ -3703,13 +3703,13 @@ graphql@^14.1.1:
   dependencies:
     iterall "^1.2.2"
 
-gridsome@0.5.5:
-  version "0.5.5"
-  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.5.5.tgz#6cccedd3cc852efbbbce9a15ba70ce0c019fd6de"
-  integrity sha512-W7rKbMSbIwxi3jO0cfEBgp5VK3Id8ZjY+rs7lYLESnBAedcxLrTdHHQ2dzy5k8l+CPz/m8fIiwSFj7nIFGaxQw==
+gridsome@0.5.6:
+  version "0.5.6"
+  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.5.6.tgz#5ab1efb3420ad753220290e905e12c58c990173f"
+  integrity sha512-ftI4K26ifbQyS85YPceReK19w0rj3ef2wwrwc4kFvagiZWtfS9TjjAcHvlc+cM7xYFuB6VXizN84tgR+TKOYzQ==
   dependencies:
     "@babel/core" "^7.0.0"
-    "@gridsome/cli" "^0.0.8"
+    "@gridsome/cli" "^0.0.9"
     "@sindresorhus/slugify" "^0.8.0"
     "@vue/babel-preset-app" "^3.4.0"
     "@vue/component-compiler-utils" "^2.5.2"

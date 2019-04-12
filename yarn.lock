@@ -8336,10 +8336,10 @@ vue-feather-icons@4.10.0:
   dependencies:
     babel-helper-vue-jsx-merge-props "^2.0.2"
 
-vue-fragment@1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/vue-fragment/-/vue-fragment-1.5.0.tgz#7739463b7680633f2b671aec9f1bfdd9a436da33"
-  integrity sha512-nobmbbOSOx59fm7U00BDz14Yvqitwx7NPQGYDTKg3+dNDGTDCRNy/q2kfr5hV4S0l4fQG0kvC+rbCmENLmHUSA==
+vue-fragment@1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/vue-fragment/-/vue-fragment-1.5.1.tgz#44c070d55ed1e9a6c698ef57a5c83f64bb06feeb"
+  integrity sha512-ig6eES6TcMBbANW71ylB+AJgRN+Zksb3f50AxjGpAk6hMzqmeuD80qeh4LJP0jVw2dMBMjgRUfIkrvxygoRgtQ==
 
 vue-hot-reload-api@^2.3.0:
   version "2.3.1"

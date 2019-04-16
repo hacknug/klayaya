@@ -2331,6 +2331,11 @@ cssesc@^2.0.0:
   resolved "https://registry.yarnpkg.com/cssesc/-/cssesc-2.0.0.tgz#3b13bd1bb1cb36e1bcb5a4dcd27f54c5dcb35703"
   integrity sha512-MsCAG1z9lPdoO/IUMLSBWBSVxVtJ1395VGIQ+Fc2gNdkQ1hNDnQdw3YhA71WJCBW1vdwA0cAnk/DnW6bqoEUYg==
 
+cssesc@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/cssesc/-/cssesc-3.0.0.tgz#37741919903b868565e1c09ea747445cd18983ee"
+  integrity sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==
+
 cssnano-preset-default@^4.0.7:
   version "4.0.7"
   resolved "https://registry.yarnpkg.com/cssnano-preset-default/-/cssnano-preset-default-4.0.7.tgz#51ec662ccfca0f88b396dcd9679cdb931be17f76"
@@ -5397,6 +5402,11 @@ normalize-url@^3.0.0:
   resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-3.3.0.tgz#b2e1c4dc4f7c6d57743df733a4f5978d18650559"
   integrity sha512-U+JJi7duF1o+u2pynbp2zXDW2/PADgC30f0GsHZtRh+HOcXHnw137TrNlyxxRvWW5fjKd3bcLHPxofWuCjaeZg==
 
+normalize.css@^8.0.1:
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/normalize.css/-/normalize.css-8.0.1.tgz#9b98a208738b9cc2634caacbc42d131c97487bf3"
+  integrity sha512-qizSNPO93t1YUuUhP22btGOo3chcvDFqFaj2TRybP0DMxkHOCTYwp3n34fel4a31ORXy4m1Xq0Gyqpb5m33qIg==
+
 npm-bundled@^1.0.1:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/npm-bundled/-/npm-bundled-1.0.5.tgz#3c1732b7ba936b3a10325aef616467c0ccbcc979"
@@ -6545,6 +6555,15 @@ postcss-selector-parser@^5.0.0, postcss-selector-parser@^5.0.0-rc.3, postcss-sel
   integrity sha512-w+zLE5Jhg6Liz8+rQOWEAwtwkyqpfnmsinXjXg6cY7YIONZZtgvE0v2O0uhQBs0peNomOJwWRKt6JBfTdTd3OQ==
   dependencies:
     cssesc "^2.0.0"
+    indexes-of "^1.0.1"
+    uniq "^1.0.1"
+
+postcss-selector-parser@^6.0.0:
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/postcss-selector-parser/-/postcss-selector-parser-6.0.2.tgz#934cf799d016c83411859e09dcecade01286ec5c"
+  integrity sha512-36P2QR59jDTOAiIkqEprfJDsoNrvwFei3eCqKd1Y0tUsBimsq39BLp7RD+JWny3WgB1zGhJX8XVePwm9k4wdBg==
+  dependencies:
+    cssesc "^3.0.0"
     indexes-of "^1.0.1"
     uniq "^1.0.1"
 
@@ -7829,12 +7848,14 @@ tailwindcss-alpha@0.1.4:
   dependencies:
     color "^3.0.0"
 
-tailwindcss-flexbox-order@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/tailwindcss-flexbox-order/-/tailwindcss-flexbox-order-1.0.0.tgz#e3cdc345400369e596ad031866d408db93ad465d"
-  integrity sha512-k0DgnFhqCmojmly+GvpMv4lb1VeoSN6F8lekab99VeQDT0CjeOK+/LRAu9oumL4vnFw6gAgLoyP5dtG5TlN/4w==
+tailwindcss-flexbox-order@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/tailwindcss-flexbox-order/-/tailwindcss-flexbox-order-1.1.0.tgz#22375b258c1d993dd881762acaa1ba7edbf31f59"
+  integrity sha512-e39GPwkBBdoFzcNw+PpfSIihn0YEVc7SAfYbyzlD33qVJXENq6M7Vhbl1j3Dc/+UGHqRcpfnSqEym3kzI/luOA==
   dependencies:
-    lodash "^4.17.10"
+    lodash "^4.17.11"
+    postcss "^7.0.14"
+    tailwindcss "^1.0.0-beta.4"
 
 tailwindcss-multi-column@^0.2.0:
   version "0.2.0"
@@ -7863,6 +7884,26 @@ tailwindcss@0.7.4:
     postcss-selector-parser "^5.0.0"
     pretty-hrtime "^1.0.3"
     strip-comments "^1.0.2"
+
+tailwindcss@^1.0.0-beta.4:
+  version "1.0.0-beta.4"
+  resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-1.0.0-beta.4.tgz#b69ab23c8ad6b937c12598310d44589f1d9f5d27"
+  integrity sha512-He5eWVg3ZxHWBwabh+w8yBu1mTyat4fvPpIobteAXtxDxEk+gSY7U2DoxpWq42r7EKr/rxRVsJXw3L6cL87I4A==
+  dependencies:
+    autoprefixer "^9.4.5"
+    bytes "^3.0.0"
+    chalk "^2.4.1"
+    fs-extra "^7.0.1"
+    lodash "^4.17.11"
+    node-emoji "^1.8.1"
+    normalize.css "^8.0.1"
+    perfectionist "^2.4.0"
+    postcss "^7.0.11"
+    postcss-functions "^3.0.0"
+    postcss-js "^2.0.0"
+    postcss-nested "^4.1.1"
+    postcss-selector-parser "^6.0.0"
+    pretty-hrtime "^1.0.3"
 
 tapable@^1.0.0, tapable@^1.1.0:
   version "1.1.1"

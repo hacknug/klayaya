@@ -692,10 +692,10 @@
     semver "^5.6.0"
     sort-package-json "^1.15.0"
 
-"@gridsome/source-wordpress@0.2.1":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@gridsome/source-wordpress/-/source-wordpress-0.2.1.tgz#83979a9bb4267e97421fb4fd6e93b707190e1d03"
-  integrity sha512-u5e59+IOrRc1baiyTJPqVGP2r5Eo59G0ZBFbKbn8GVV6mduWnYq344+MDUGY2YQg8x0baTJiMF3ZAtl/8XY35w==
+"@gridsome/source-wordpress@0.2.2":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@gridsome/source-wordpress/-/source-wordpress-0.2.2.tgz#d3994805707e4437ca5d9f30654ff59ef5482853"
+  integrity sha512-jF6AsCc012M2YZi013eKquUguBhxHs1lUzgyZs1iRwld0F8QRmcELTN4QGfknUY2QE2xPTh9Aeku8c4qbRhveg==
   dependencies:
     axios "^0.18.0"
     lodash "^4.17.10"

@@ -693,13 +693,14 @@
     semver "^5.6.0"
     sort-package-json "^1.15.0"
 
-"@gridsome/source-wordpress@0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@gridsome/source-wordpress/-/source-wordpress-0.2.2.tgz#d3994805707e4437ca5d9f30654ff59ef5482853"
-  integrity sha512-jF6AsCc012M2YZi013eKquUguBhxHs1lUzgyZs1iRwld0F8QRmcELTN4QGfknUY2QE2xPTh9Aeku8c4qbRhveg==
+"@gridsome/source-wordpress@0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@gridsome/source-wordpress/-/source-wordpress-0.3.0.tgz#1e6b33e3225f5c5f555f107a638649ff3da94975"
+  integrity sha512-azGMxgPO8zDkRaMtgT+95Ai/9gvs0nivU6FqK61J8p5amHnJJN1vG2lnRq4U6Vatm8gqGEMDGQsL97qm8mq61g==
   dependencies:
     axios "^0.18.0"
-    lodash "^4.17.10"
+    camelcase "^5.0.0"
+    lodash "^4.17.11"
     p-map "^1.2.0"
 
 "@hjvedvik/tasks@^0.0.8":

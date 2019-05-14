@@ -3728,10 +3728,10 @@ graphql@^14.1.1:
   dependencies:
     iterall "^1.2.2"
 
-gridsome@0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.6.0.tgz#366232778c3148a14936ce0b24d1069f526bfcf5"
-  integrity sha512-fm+UihcsIMGcqBvA3H8tbRjDQ1YagTn+vTNZQiHl+Z2bgm6ynVMMizM1WRIKzVZpaMM3bRRCJIRnf1Va9KpJkg==
+gridsome@0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.6.1.tgz#918bf0022de466dee2e2a69487da2c852c8b8909"
+  integrity sha512-slq5nUd9xDHErlBGTT1sUOwRtwI37pgATBg8zkN565AbXnO3bNmVnRUaZ0OvMtQFpg97NaMasJPaxKIOG7vpfA==
   dependencies:
     "@babel/core" "^7.0.0"
     "@gridsome/cli" "^0.1.0"

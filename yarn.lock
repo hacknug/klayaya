@@ -8297,10 +8297,10 @@ vm-browserify@0.0.4:
   dependencies:
     indexof "0.0.1"
 
-vue-feather-icons@4.10.0:
-  version "4.10.0"
-  resolved "https://registry.yarnpkg.com/vue-feather-icons/-/vue-feather-icons-4.10.0.tgz#84b699fe148b709ff3f609fc94eed44b078f1c27"
-  integrity sha512-fmL/v7DN9HYqnkR7h16PvoMgUk41kxqgqv7yPCAcW4nXRaX1dKgnLwm8m5R2Lpu0NxwpYzRKeTvOs+ti3KaqSg==
+vue-feather-icons@4.21.0:
+  version "4.21.0"
+  resolved "https://registry.yarnpkg.com/vue-feather-icons/-/vue-feather-icons-4.21.0.tgz#062ab7f6a33c4c4c5c9c94d5be307ebac5ef5ef2"
+  integrity sha512-PEpJunYaGljd/m0n19zLwUWXxhcVXUEM/ldbhMf9cL8lV5GQIhoeWbsLip4W9u4m8nEDQzuE757T7xEwKg0p3A==
   dependencies:
     babel-helper-vue-jsx-merge-props "^2.0.2"
 

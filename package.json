@@ -10,7 +10,7 @@
     "@gridsome/source-wordpress": "0.3.0",
     "feather-icons": "4.21.0",
     "gridsome": "0.6.1",
-    "vue-feather-icons": "4.10.0",
+    "vue-feather-icons": "4.21.0",
     "vue-fragment": "1.5.1",
     "vue-masonry-css": "1.0.3",
     "vue-svg-inline-loader": "1.2.15",

@@ -43,8 +43,8 @@ export default {
       @screen md { @apply block; }
     }
 
-    &:hover { @apply bg-grey-light-25; }
-    &:focus { @apply bg-grey-light-50; }
+    /* &:hover { @apply bg-grey-light-25; }
+    &:focus { @apply bg-grey-light-50; } */
 
     &.active.active--exact { @apply text-white bg-black; }
   }

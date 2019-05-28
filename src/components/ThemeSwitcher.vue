@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ul class="list-reset flex">
+    <ul class="flex">
 
       <li
         v-for="(theme, name) in themes"

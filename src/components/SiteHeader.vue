@@ -61,8 +61,8 @@ export default {
     classes() {
       return {
         header: [
-          'md:sticky pin-t',
-          'flex flex-wrap md:flex-no-wrap md:flex-col flex-no-shrink justify-between',
+          'md:sticky top-0',
+          'flex flex-wrap md:flex-no-wrap md:flex-col flex-shrink-0 justify-between',
           'w-full md:max-w-xs md:h-screen p-6 md:p-8 text-white bg-black',
         ],
         nav: [
@@ -70,10 +70,10 @@ export default {
           this.isMenuOpen || this.mediaQuery.matches ? 'flex flex-col' : 'hidden md:flex',
           'w-full mt-8 md:my-16 text-lg md:text-xl',
         ],
-        list: [ 'list-reset flex-grow -mx-3 col-gap-4 md:col-gap-0 col-count-2 md:col-count-auto' ],
+        list: [ 'flex-grow -mx-3 col-gap-4 md:col-gap-0 col-count-2 md:col-count-auto' ],
         item: [ 'flex mb-1' ],
         link: [ 'flex items-center w-full px-3 py-2 rounded overflow-hidden' ],
-        icon: [ 'flex-no-shrink mr-3' ],
+        icon: [ 'flex-shrink-0 mr-3' ],
         button: [ 'md:hidden m-1 px-3 py-2 leading-none rounded overflow-hidden' ],
       }
     },
@@ -87,10 +87,10 @@ export default {
 
     & :matches(a, button) {
       transition: background-color 0.125s ease-in-out;
-      &:hover { @apply bg-grey-darkest-25; }
-      &:focus { @apply bg-grey-darkest-50; }
+      /* &:hover { @apply bg-grey-darkest-25; }
+      &:focus { @apply bg-grey-darkest-50; } */
     }
 
-    & li a.active.active--exact { @apply bg-grey-darkest-75; }
+    /* & li a.active.active--exact { @apply bg-grey-darkest-75; } */
   }
 </style>

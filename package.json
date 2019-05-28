@@ -9,8 +9,8 @@
   "dependencies": {
     "@gridsome/source-wordpress": "0.3.0",
     "feather-icons": "4.21.0",
-    "gridsome": "0.6.1",
-    "vue-feather-icons": "4.10.0",
+    "gridsome": "0.6.3",
+    "vue-feather-icons": "4.21.0",
     "vue-fragment": "1.5.1",
     "vue-masonry-css": "1.0.3",
     "vue-svg-inline-loader": "1.2.15",
@@ -20,7 +20,7 @@
     "@fullhuman/postcss-purgecss": "1.2.0",
     "postcss-import": "12.0.1",
     "postcss-preset-env": "6.6.0",
-    "tailwindcss": "1.0.1",
+    "tailwindcss": "1.0.2",
     "tailwindcss-alpha": "0.1.4",
     "tailwindcss-flexbox-order": "^1.1.0",
     "tailwindcss-multi-column": "^0.2.0"

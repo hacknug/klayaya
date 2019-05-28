@@ -678,10 +678,10 @@
     postcss "^7.0.14"
     purgecss "^1.3.0"
 
-"@gridsome/cli@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@gridsome/cli/-/cli-0.1.0.tgz#97713981fef0e0e33ae101939a0c66a3a346cdc4"
-  integrity sha512-X2ASRm2MLDjW69IOhlrSSJtVl8/KdAPi4G8mwXNZDr9u9r+HE0RbG4y+pVwJcOMKkR8XRj7xMAcnSQXwJiGfTg==
+"@gridsome/cli@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@gridsome/cli/-/cli-0.1.1.tgz#b0760dd9dd16e11420d1cc64b37077f62a002972"
+  integrity sha512-c40nerYwyHc0Qukc33RyOVxcUAFr1Tcut9YSXs1RZASylDKTwYGVVN+d4XGgEP3Lw1AM1PUHFprxJ1UKXYlQzg==
   dependencies:
     "@hjvedvik/tasks" "^0.0.8"
     chalk "^2.4.1"
@@ -3675,13 +3675,13 @@ graphql@^14.1.1:
   dependencies:
     iterall "^1.2.2"
 
-gridsome@0.6.1:
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.6.1.tgz#918bf0022de466dee2e2a69487da2c852c8b8909"
-  integrity sha512-slq5nUd9xDHErlBGTT1sUOwRtwI37pgATBg8zkN565AbXnO3bNmVnRUaZ0OvMtQFpg97NaMasJPaxKIOG7vpfA==
+gridsome@0.6.3:
+  version "0.6.3"
+  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.6.3.tgz#d67ab595ac4d210d30e6c975654fa9736a0afd3d"
+  integrity sha512-8D7B5d23xkslLmix/o7nnAA75MsQ23U2UgsyxeMKwPBwtm+INxcYKV/qQi0ANlDYhcj5va2wmyiW/wlmeN3E2g==
   dependencies:
     "@babel/core" "^7.0.0"
-    "@gridsome/cli" "^0.1.0"
+    "@gridsome/cli" "^0.1.1"
     "@sindresorhus/slugify" "^0.8.0"
     "@vue/babel-preset-app" "^3.4.0"
     "@vue/component-compiler-utils" "^2.5.2"
@@ -7806,10 +7806,10 @@ tailwindcss-multi-column@^0.2.0:
   dependencies:
     lodash "^4.17.10"
 
-tailwindcss@1.0.1, tailwindcss@^1.0.0-beta.4:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-1.0.1.tgz#3116e989c64540f1c11214e8b4c08b6aea548be5"
-  integrity sha512-tNyvmizhIY9ydXX8m84S/69851QROZzbH6RB/Q4w0K27OssupGcyXeD8zumzb9Yuzq6PifBH2A6ehjuBPklnYA==
+tailwindcss@1.0.2, tailwindcss@^1.0.0-beta.4:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-1.0.2.tgz#1df9caf88e0b194a5debf3c3b3aa6b64ea92c9a8"
+  integrity sha512-zqrWxJo3UlXDSa6KA3v0D9FIMCR8ZtVRxTu68+mwqVwazzxVlXM5Y0j1TM3hjGeScfPpOeV06k7Vs9eY7+eoPA==
   dependencies:
     autoprefixer "^9.4.5"
     bytes "^3.0.0"
@@ -8297,10 +8297,10 @@ vm-browserify@0.0.4:
   dependencies:
     indexof "0.0.1"
 
-vue-feather-icons@4.10.0:
-  version "4.10.0"
-  resolved "https://registry.yarnpkg.com/vue-feather-icons/-/vue-feather-icons-4.10.0.tgz#84b699fe148b709ff3f609fc94eed44b078f1c27"
-  integrity sha512-fmL/v7DN9HYqnkR7h16PvoMgUk41kxqgqv7yPCAcW4nXRaX1dKgnLwm8m5R2Lpu0NxwpYzRKeTvOs+ti3KaqSg==
+vue-feather-icons@4.21.0:
+  version "4.21.0"
+  resolved "https://registry.yarnpkg.com/vue-feather-icons/-/vue-feather-icons-4.21.0.tgz#062ab7f6a33c4c4c5c9c94d5be307ebac5ef5ef2"
+  integrity sha512-PEpJunYaGljd/m0n19zLwUWXxhcVXUEM/ldbhMf9cL8lV5GQIhoeWbsLip4W9u4m8nEDQzuE757T7xEwKg0p3A==
   dependencies:
     babel-helper-vue-jsx-merge-props "^2.0.2"
 

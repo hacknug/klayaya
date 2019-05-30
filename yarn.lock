@@ -3318,6 +3318,13 @@ find-versions@^3.0.0:
     array-uniq "^2.0.0"
     semver-regex "^2.0.0"
 
+flat@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/flat/-/flat-4.1.0.tgz#090bec8b05e39cba309747f1d588f04dbaf98db2"
+  integrity sha512-Px/TiLIznH7gEDlPXcUD4KnBusa6kR6ayRUVcnEAbreRIuhkqow/mun59BuRXwoYk7ZQOLW1ZM05ilIvK38hFw==
+  dependencies:
+    is-buffer "~2.0.3"
+
 flatten@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/flatten/-/flatten-1.0.2.tgz#dae46a9d78fbe25292258cc1e780a41d95c03782"
@@ -4232,6 +4239,11 @@ is-buffer@^1.1.5:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/is-buffer/-/is-buffer-1.1.6.tgz#efaa2ea9daa0d7ab2ea13a97b2b8ad51fefbe8be"
   integrity sha512-NcdALwpXkTm5Zvvbk7owOUSvVvBKDgKP5/ewfXEznmQFfs4ZRmanOeKBTjRVjka3QFoN6XJ+9F3USqfHqTaU5w==
+
+is-buffer@~2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/is-buffer/-/is-buffer-2.0.3.tgz#4ecf3fcf749cbd1e472689e109ac66261a25e725"
+  integrity sha512-U15Q7MXTuZlrbymiz95PJpZxu8IlipAp4dtS3wOdgPXx3mqBnslrWU14kxfHB+Py/+2PVKSr37dMAgM2A4uArw==
 
 is-builtin-module@^1.0.0:
   version "1.0.0"
@@ -7799,12 +7811,13 @@ tailwindcss-flexbox-order@^1.1.0:
     postcss "^7.0.14"
     tailwindcss "^1.0.0-beta.4"
 
-tailwindcss-multi-column@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/tailwindcss-multi-column/-/tailwindcss-multi-column-0.2.0.tgz#2390ba326c0e0b2081a8f7b435a2f2da0c832114"
-  integrity sha512-tMDTydzqGK6qQnNol34Vajh6dJ12KG6BkfitrmPMNg/C8nx8mopJETUil8Vi0evtDVp144vPHGi7vGomYlDRfg==
+tailwindcss-multi-column@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/tailwindcss-multi-column/-/tailwindcss-multi-column-1.0.0.tgz#9b5402dbcd881329b51e0042b3e305829c4793e8"
+  integrity sha512-HRf1O3FPbqMbWmYOpz0qmikzTsMtVKQS2mMwKOM2ci8oMynYjDoeUBvtZKtIjrBAHUyeDSoD2wR8Q8l5HRd9Fg==
   dependencies:
-    lodash "^4.17.10"
+    flat "^4.1.0"
+    lodash "^4.17.11"
 
 tailwindcss@1.0.2, tailwindcss@^1.0.0-beta.4:
   version "1.0.2"

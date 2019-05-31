@@ -359,6 +359,9 @@ module.exports = {
     stroke: {
       'current': 'currentColor',
     },
+
+    columnCount: [ 'auto', 1, 2 ],
+    columnGap: { '0': '0', '4': pxToRem(16) },
   },
 
   variants: {
@@ -435,10 +438,6 @@ module.exports = {
   plugins: [
     // require('tailwindcss-alpha')(),
     require('tailwindcss-flexbox-order')(),
-    require('tailwindcss-multi-column')({
-      variants: ['responsive'],
-      counts: ['auto', 1, 2],
-      gaps: { '0': '0', '4': pxToRem(16) },
-    }),
+    require('tailwindcss-multi-column')(),
   ],
 }

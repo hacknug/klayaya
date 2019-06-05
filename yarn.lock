@@ -7811,10 +7811,10 @@ tailwindcss-flexbox-order@^1.1.0:
     postcss "^7.0.14"
     tailwindcss "^1.0.0-beta.4"
 
-tailwindcss-multi-column@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/tailwindcss-multi-column/-/tailwindcss-multi-column-1.0.0.tgz#9b5402dbcd881329b51e0042b3e305829c4793e8"
-  integrity sha512-HRf1O3FPbqMbWmYOpz0qmikzTsMtVKQS2mMwKOM2ci8oMynYjDoeUBvtZKtIjrBAHUyeDSoD2wR8Q8l5HRd9Fg==
+tailwindcss-multi-column@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/tailwindcss-multi-column/-/tailwindcss-multi-column-1.0.1.tgz#193c64b810c1e6460234963e06e18f3eb2b74e7f"
+  integrity sha512-XjsNk8bw/Re2lJCTq9hGqVo7qmSBrsS759xXO/6Xb0MCfXzDlOQXnNXyJw+KmQjgZx8zln5xfIG8wIsUaX6Iew==
   dependencies:
     flat "^4.1.0"
     lodash "^4.17.11"

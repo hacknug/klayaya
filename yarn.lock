@@ -678,14 +678,15 @@
     postcss "^7.0.14"
     purgecss "^1.3.0"
 
-"@gridsome/cli@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@gridsome/cli/-/cli-0.1.1.tgz#b0760dd9dd16e11420d1cc64b37077f62a002972"
-  integrity sha512-c40nerYwyHc0Qukc33RyOVxcUAFr1Tcut9YSXs1RZASylDKTwYGVVN+d4XGgEP3Lw1AM1PUHFprxJ1UKXYlQzg==
+"@gridsome/cli@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@gridsome/cli/-/cli-0.2.0.tgz#cbccebe7ffd9c151a87402fd801f8470e8d46ded"
+  integrity sha512-8mLzvvZ2+LRoNk7E18tRSsQ7oqE+ckqZ60ychsVPWZ5EUgbu60s//LR936HQ5uea76tMtGi4BrZ++yh/uXOGfg==
   dependencies:
     "@hjvedvik/tasks" "^0.0.8"
     chalk "^2.4.1"
     commander "^2.15.1"
+    didyoumean "^1.2.1"
     execa "^0.10.0"
     find-up "^2.1.0"
     fs-extra "^6.0.1"
@@ -2611,6 +2612,11 @@ detect-libc@^1.0.2, detect-libc@^1.0.3:
   resolved "https://registry.yarnpkg.com/detect-libc/-/detect-libc-1.0.3.tgz#fa137c4bd698edf55cd5cd02ac559f91a4c4ba9b"
   integrity sha1-+hN8S9aY7fVc1c0CrFWfkaTEups=
 
+didyoumean@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/didyoumean/-/didyoumean-1.2.1.tgz#e92edfdada6537d484d73c0172fd1eba0c4976ff"
+  integrity sha1-6S7f2tplN9SE1zwBcv0eugxJdv8=
+
 diffie-hellman@^5.0.0:
   version "5.0.3"
   resolved "https://registry.yarnpkg.com/diffie-hellman/-/diffie-hellman-5.0.3.tgz#40e8ee98f55a2149607146921c63e1ae5f3d2875"
@@ -3682,13 +3688,13 @@ graphql@^14.1.1:
   dependencies:
     iterall "^1.2.2"
 
-gridsome@0.6.3:
-  version "0.6.3"
-  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.6.3.tgz#d67ab595ac4d210d30e6c975654fa9736a0afd3d"
-  integrity sha512-8D7B5d23xkslLmix/o7nnAA75MsQ23U2UgsyxeMKwPBwtm+INxcYKV/qQi0ANlDYhcj5va2wmyiW/wlmeN3E2g==
+gridsome@0.6.4:
+  version "0.6.4"
+  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.6.4.tgz#5389f9ab0a630b5cd4c49e66958e5d07eac1d6bc"
+  integrity sha512-QmeltD2r/3dRn84v/+alFAdBRcKJpJDWlUIoj5gZrjtCujbIFtn/xzVUcMXP+UK928bmzbjipcH1LY7M005GiQ==
   dependencies:
     "@babel/core" "^7.0.0"
-    "@gridsome/cli" "^0.1.1"
+    "@gridsome/cli" "^0.2.0"
     "@sindresorhus/slugify" "^0.8.0"
     "@vue/babel-preset-app" "^3.4.0"
     "@vue/component-compiler-utils" "^2.5.2"

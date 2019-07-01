@@ -13,7 +13,7 @@
     "vue-feather-icons": "4.22.0",
     "vue-fragment": "1.5.1",
     "vue-masonry-css": "1.0.3",
-    "vue-svg-inline-loader": "1.2.15",
+    "vue-svg-inline-loader": "1.2.16",
     "vuex": "^3.1.1"
   },
   "devDependencies": {

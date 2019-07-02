@@ -1,19 +1,19 @@
 <template>
   <header id="header" :class="classes.header">
 
-    <g-link :to="{ name: 'home' }" class="flex w-32 md:w-64 h-32 md:h-64 -m-3 md:my-0 p-3 rounded-full overflow-hidden">
+    <g-link to="/" class="flex w-32 md:w-64 h-32 md:h-64 -m-3 md:my-0 p-3 rounded-full overflow-hidden">
       <h1 class="clip">{{ $static.metaData.siteName }}</h1>
       <img svg-inline class="block w-full fill-current" src="../assets/img/logo.svg" :alt="$static.metaData.siteName + ' logo'" />
     </g-link>
 
     <nav :class="classes.nav">
       <ul :class="classes.list">
-        <li :class="classes.item"><g-link :class="classes.link" :to="{ name: 'home' }"><HomeIcon :class="classes.icon" /> Inicio</g-link></li>
-        <li :class="classes.item"><g-link :class="classes.link" :to="{ name: 'store' }"><ShoppingBagIcon :class="classes.icon" /> Tienda</g-link></li>
-        <li :class="classes.item"><g-link :class="classes.link" :to="{ name: 'contact' }"><MailIcon :class="classes.icon" /> Contacto</g-link></li>
-        <li :class="classes.item"><g-link :class="classes.link" :to="{ name: 'releases' }"><DiscIcon :class="classes.icon" /> Trabajos</g-link></li>
-        <li :class="classes.item"><g-link :class="classes.link" :to="{ name: 'videos' }"><VideoIcon :class="classes.icon" /> Videos</g-link></li>
-        <li :class="classes.item"><g-link :class="classes.link" :to="{ name: 'archive' }"><ArchiveIcon :class="classes.icon" /> Archivo</g-link></li>
+        <li :class="classes.item"><g-link :class="classes.link" to="/"><HomeIcon :class="classes.icon" /> Inicio</g-link></li>
+        <li :class="classes.item"><g-link :class="classes.link" to="/store"><ShoppingBagIcon :class="classes.icon" /> Tienda</g-link></li>
+        <li :class="classes.item"><g-link :class="classes.link" to="/contact"><MailIcon :class="classes.icon" /> Contacto</g-link></li>
+        <li :class="classes.item"><g-link :class="classes.link" to="/releases"><DiscIcon :class="classes.icon" /> Trabajos</g-link></li>
+        <li :class="classes.item"><g-link :class="classes.link" to="/videos"><VideoIcon :class="classes.icon" /> Videos</g-link></li>
+        <li :class="classes.item"><g-link :class="classes.link" to="/archive"><ArchiveIcon :class="classes.icon" /> Archivo</g-link></li>
       </ul>
     </nav>
 

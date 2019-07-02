@@ -13,21 +13,19 @@ module.exports = {
       .oneOf('normal') // normal, module
       .use('postcss-loader')
       .tap(options => {
-        options.plugins.unshift(
-          ...[
-            require('postcss-import'),
-            require('tailwindcss')('./tailwind.config.js'),
-            require('postcss-preset-env')({
-              stage: 0,
-              autoprefixer: false,
-              features: {
-                'nesting-rules': {
-                  bubble: ['apply', 'variants', 'responsive', 'screen'],
-                },
+        options.plugins.unshift(...[
+          require('postcss-import'),
+          require('tailwindcss')('./tailwind.config.js'),
+          require('postcss-preset-env')({
+            stage: 0,
+            autoprefixer: false,
+            features: {
+              'nesting-rules': {
+                bubble: ['apply', 'variants', 'responsive', 'screen'],
               },
-            }),
-          ]
-        )
+            },
+          }),
+        ])
 
         if (process.env.NODE_ENV === 'production') {
           options.plugins.push(...[

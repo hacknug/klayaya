@@ -14,6 +14,13 @@ export default new Vuex.Store({
   },
   getters: {
     getActiveTheme: (state) => state.activeTheme,
+    getInactiveThemes(state) {
+      return Object.fromEntries(
+        Object.entries(state.themes).filter(
+          ([name, theme]) => name !== state.activeTheme
+        )
+      )
+    },
   },
   mutations: {
     SET_ACTIVE_THEME(state, theme) {

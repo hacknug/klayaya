@@ -3,9 +3,8 @@
     <ul class="flex">
 
       <li
-        v-for="(theme, name) in themes"
-        v-if="name !== getActiveTheme"
-        class="m-1 bg-grey-darkest-25 rounded overflow-hidden"
+        v-for="(theme, name) in getInactiveThemes"
+        class="m-1 bg-gray-800 rounded overflow-hidden"
         :key="name">
 
         <button class="flex p-2" @click="setActiveTheme(name, $event)">
@@ -32,7 +31,7 @@ export default {
   },
   computed: {
     ...mapState(['themes']),
-    ...mapGetters(['getActiveTheme']),
+    ...mapGetters(['getActiveTheme', 'getInactiveThemes']),
   },
 }
 </script>

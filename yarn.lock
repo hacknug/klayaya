@@ -7827,6 +7827,13 @@ tailwindcss-flexbox-order@^1.1.0:
     postcss "^7.0.14"
     tailwindcss "^1.0.0-beta.4"
 
+tailwindcss-interaction-variants@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/tailwindcss-interaction-variants/-/tailwindcss-interaction-variants-2.0.0.tgz#3dc967fbc7cab6ac7d05c9fb75264a97111c9bdb"
+  integrity sha512-GoOojKktbtnzumT7Ip9zPbyKn5yZf3Ig0If1NWvCQGWJbphCLowdRFj/kM1FEVuN4Tc9V6hJRwxZ6o4ps+VYnQ==
+  dependencies:
+    lodash "^4.17.11"
+
 tailwindcss-multi-column@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/tailwindcss-multi-column/-/tailwindcss-multi-column-1.0.1.tgz#193c64b810c1e6460234963e06e18f3eb2b74e7f"

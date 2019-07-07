@@ -1,7 +1,7 @@
 <template>
   <header id="header" :class="classes.header">
 
-    <g-link to="/" class="flex w-32 md:w-64 h-32 md:h-64 -m-3 md:my-0 p-3 rounded-full overflow-hidden">
+    <g-link to="/" class="flex w-32 md:w-64 h-32 md:h-64 -m-3 md:my-0 p-3 border border-transparent hover:border-white rounded-full overflow-hidden">
       <h1 class="clip">{{ $static.metaData.siteName }}</h1>
       <img svg-inline class="block w-full fill-current" src="../assets/img/logo.svg" :alt="$static.metaData.siteName + ' logo'" />
     </g-link>
@@ -37,6 +37,7 @@ query Home {
 </static-query>
 
 <script>
+import { mapGetters } from 'vuex'
 import { HomeIcon, ShoppingBagIcon, DiscIcon, VideoIcon, ArchiveIcon, MailIcon } from 'vue-feather-icons'
 
 import ThemeSwitcher from '~/components/ThemeSwitcher.vue'
@@ -51,19 +52,23 @@ export default {
   data() {
     return {
       isMenuOpen: false,
-      // TODO: Add config to Vue.prototype: https://discordapp.com/channels/476372673564246017/504192730667155466/552423644073164800
+      // TODO: Add config to Vue.prototype
+      // https://discordapp.com/channels/476372673564246017/504192730667155466/552423644073164800
       mediaQuery: () => {
         return window ? window.matchMedia('(min-width: 768px)') : { matches: false }
       },
     }
   },
   computed: {
+    ...mapGetters(['getActiveTheme']),
+
     classes() {
       return {
         header: [
           'md:sticky top-0',
           'flex flex-wrap md:flex-no-wrap md:flex-col flex-shrink-0 justify-between',
-          'w-full md:max-w-xs md:h-screen p-6 md:p-8 text-white bg-black',
+          'w-full md:max-w-xs md:h-screen p-4 md:p-8 text-white',
+          this.getActiveTheme === 'light' ? 'bg-gray-900' : 'bg-black',
         ],
         nav: [
           'order-1 md:order-0',
@@ -71,8 +76,8 @@ export default {
           'w-full mt-8 md:my-16 text-lg md:text-xl',
         ],
         list: [ 'flex-grow -mx-3 col-gap-4 md:col-gap-0 col-count-2 md:col-count-auto' ],
-        item: [ 'flex mb-1' ],
-        link: [ 'flex items-center w-full px-3 py-2 rounded overflow-hidden' ],
+        item: [ 'flex mb-2' ],
+        link: [ 'flex items-center w-full px-3 py-2 border border-transparent rounded overflow-hidden' ],
         icon: [ 'flex-shrink-0 mr-3' ],
         button: [ 'md:hidden m-1 px-3 py-2 leading-none rounded overflow-hidden' ],
       }
@@ -83,14 +88,19 @@ export default {
 
 <style lang="postcss">
   #header {
-    & svg { stroke-width: 1.5px; }
-
-    & :matches(a, button) {
-      transition: background-color 0.125s ease-in-out;
-      /* &:hover { @apply bg-grey-darkest-25; }
-      &:focus { @apply bg-grey-darkest-50; } */
+    & svg {
+      stroke-width: 1.5px;
     }
 
-    /* & li a.active.active--exact { @apply bg-grey-darkest-75; } */
+    & :matches(a, button) {
+      transition:
+        background-color 0.125s ease-in-out,
+        border-color 0.125s ease-in-out;
+      &:matches(:hover, :focus) { @apply bg-gray-800 border-gray-500; }
+    }
+
+    & li a.active.active--exact {
+      @apply bg-gray-800;
+    }
   }
 </style>

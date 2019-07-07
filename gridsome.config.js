@@ -21,7 +21,7 @@ module.exports = {
             autoprefixer: false,
             features: {
               'nesting-rules': {
-                bubble: ['apply', 'variants', 'responsive', 'screen'],
+                bubble: ['tailwind', 'apply', 'variants', 'responsive', 'screen'],
               },
             },
           }),

@@ -1,7 +1,7 @@
 <template>
   <Pager :info="info"
     :class="classes.pager"
-    linkClass="inline-block mx-1 px-3 py-1"
+    linkClass="inline-block mx-1 px-3 py-1 border border-transparent"
     prevLabel="Anterior"
     nextLabel="Siguiente"
   />
@@ -38,15 +38,14 @@ export default {
 
     transition: background-color 0.125s ease-in-out;
 
+    &:matches(:hover, :focus) { @apply border-gray-700; }
+
     &:matches([aria-label*="Current page"], [aria-label*="Go to page"]) {
       @apply hidden;
       @screen md { @apply block; }
     }
 
-    /* &:hover { @apply bg-grey-light-25; }
-    &:focus { @apply bg-grey-light-50; } */
-
-    &.active.active--exact { @apply text-white bg-black; }
+    &.active.active--exact { @apply border-gray-700 text-gray-900 bg-gray-200; }
   }
 }
 </style>

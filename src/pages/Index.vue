@@ -3,13 +3,13 @@
 
     <h1 class="clip">KLaYaya</h1>
 
-    <masonry :cols="{ default: 4, 1920: 3, 1280: 2, 640: 1 }" :gutter="30" class="mb-12 px-2 md:px-6">
-      <div v-for="{ node } in $page.allWordPressPost.edges" class="mb-12" :key="node.id">
+    <masonry :cols="{ default: 4, 1920: 3, 1280: 2, 640: 1 }" :gutter="30" class="md:px-6">
+      <div v-for="{ node } in $page.allWordPressPost.edges" class="mb-4 md:mb-12" :key="node.id">
         <PostCard :node="node" />
       </div>
     </masonry>
 
-    <footer class="flex justify-center mt-auto -mx-2 text-xl">
+    <footer class="sticky bottom-3 flex justify-center mt-auto -mx-2 text-xl">
       <BasePager :info="$page.allWordPressPost.pageInfo"></BasePager>
     </footer>
 
@@ -34,6 +34,10 @@
           featuredMedia {
             id
             sourceUrl
+          }
+          categories {
+            title
+            slug
           }
         }
       }

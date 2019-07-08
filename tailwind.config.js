@@ -31,6 +31,10 @@ module.exports = {
     extend: {
       colors: {
         current: 'currentColor',
+      },
+      minWidth: {
+        max: 'max-content',
+        min: 'min-content',
       }
     },
   },

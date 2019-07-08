@@ -39,6 +39,10 @@
             title
             slug
           }
+          artistas {
+            title
+            slug
+          }
         }
       }
     }

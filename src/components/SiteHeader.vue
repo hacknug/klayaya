@@ -73,11 +73,11 @@ export default {
         nav: [
           'order-1 md:order-0',
           this.isMenuOpen || this.mediaQuery.matches ? 'flex flex-col' : 'hidden md:flex',
-          'w-full mt-8 md:my-16 text-lg md:text-xl',
+          'w-full mt-8 md:my-16 text-base md:text-xl',
         ],
-        list: [ 'flex-grow -mx-3 col-gap-4 md:col-gap-0 col-count-2 md:col-count-auto' ],
+        list: [ 'flex-grow -mx-1 col-gap-4 md:col-gap-0 col-count-2 md:col-count-auto' ],
         item: [ 'flex mb-2' ],
-        link: [ 'flex items-center w-full px-3 py-2 border border-transparent rounded overflow-hidden' ],
+        link: [ 'flex items-center w-full p-2 border border-transparent rounded overflow-hidden' ],
         icon: [ 'flex-shrink-0 mr-3' ],
         button: [ 'md:hidden m-1 px-3 py-2 leading-none rounded overflow-hidden' ],
       }

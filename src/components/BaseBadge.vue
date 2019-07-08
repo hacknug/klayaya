@@ -31,7 +31,7 @@ export default {
           'inline-block px-2 py-1 border rounded',
           this.getActiveTheme === 'light'
             ? this.theme === 'primary' ? 'text-pink-700 bg-pink-200 border-pink-300 hocus:border-pink-500' : 'text-gray-700 bg-gray-200 border-gray-300 hocus:border-gray-500'
-            : this.theme === 'primary' ? 'text-gray-700 bg-gray-200 border-gray-300 hocus:border-gray-500' : 'text-gray-700 bg-gray-200 border-gray-300 hocus:border-gray-500',
+            : this.theme === 'primary' ? 'text-pink-700 bg-pink-200 border-pink-300 hocus:border-pink-500' : 'text-gray-700 bg-gray-200 border-gray-300 hocus:border-gray-500',
         ],
       }
     },

@@ -9,7 +9,7 @@
         <g-image class="block" :src="node.featuredMedia.sourceUrl" />
       </figure>
 
-      <nav class="mb-4">
+      <nav v-if="node.categories" class="mb-4">
         <ul class="flex flex-wrap text-xs font-medium uppercase tracking-wide">
           <li v-for="category in node.categories" :key="category.slug" class="mr-2">
             <BaseBadge theme="primary" :url="`tag/${category.slug}`" :label="category.title" />

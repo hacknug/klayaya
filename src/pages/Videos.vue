@@ -35,6 +35,14 @@
             id
             sourceUrl
           }
+          categories {
+            title
+            slug
+          }
+          artistas {
+            title
+            slug
+          }
         }
       }
     }

@@ -7841,10 +7841,10 @@ tailwindcss-interaction-variants@^2.1.0:
     lodash "^4.17.14"
     postcss-selector-parser "^6.0.2"
 
-tailwindcss-multi-column@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/tailwindcss-multi-column/-/tailwindcss-multi-column-1.0.1.tgz#193c64b810c1e6460234963e06e18f3eb2b74e7f"
-  integrity sha512-XjsNk8bw/Re2lJCTq9hGqVo7qmSBrsS759xXO/6Xb0MCfXzDlOQXnNXyJw+KmQjgZx8zln5xfIG8wIsUaX6Iew==
+tailwindcss-multi-column@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/tailwindcss-multi-column/-/tailwindcss-multi-column-1.0.2.tgz#630f5ec6586d0846014555aa2c91510c06a8b715"
+  integrity sha512-2hn7WIgzTWfstPz7H0C2dqQTWoOMfUweH3MEYXhydpLpiIs5HWZkuP05vI92lVwEGB/7QVpjWZKGeUgiwbN7Yw==
   dependencies:
     flat "^4.1.0"
     lodash "^4.17.11"

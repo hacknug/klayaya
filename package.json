@@ -23,7 +23,7 @@
     "tailwindcss": "1.0.5",
     "tailwindcss-alpha": "0.1.4",
     "tailwindcss-flexbox-order": "^1.1.0",
-    "tailwindcss-interaction-variants": "^2.0.0",
+    "tailwindcss-interaction-variants": "^2.1.0",
     "tailwindcss-multi-column": "^1.0.1"
   }
 }

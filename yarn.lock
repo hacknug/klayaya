@@ -4829,7 +4829,7 @@ lodash.uniqueid@^4.0.1:
   resolved "https://registry.yarnpkg.com/lodash.uniqueid/-/lodash.uniqueid-4.0.1.tgz#3268f26a7c88e4f4b1758d679271814e31fa5b26"
   integrity sha1-MmjyanyI5PSxdY1nknGBTjH6WyY=
 
-lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.3, lodash@^4.17.5:
+lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.14, lodash@^4.17.3, lodash@^4.17.5:
   version "4.17.14"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.14.tgz#9ce487ae66c96254fe20b599f21b6816028078ba"
   integrity sha512-mmKYbW3GLuJeX+iGP+Y7Gp1AiGHGbXHCOh/jZmrawMmsE7MS4znI3RL2FsjbqOyMayHInjOeykW7PEajUk1/xw==
@@ -6546,7 +6546,7 @@ postcss-selector-parser@^5.0.0, postcss-selector-parser@^5.0.0-rc.3, postcss-sel
     indexes-of "^1.0.1"
     uniq "^1.0.1"
 
-postcss-selector-parser@^6.0.0:
+postcss-selector-parser@^6.0.0, postcss-selector-parser@^6.0.2:
   version "6.0.2"
   resolved "https://registry.yarnpkg.com/postcss-selector-parser/-/postcss-selector-parser-6.0.2.tgz#934cf799d016c83411859e09dcecade01286ec5c"
   integrity sha512-36P2QR59jDTOAiIkqEprfJDsoNrvwFei3eCqKd1Y0tUsBimsq39BLp7RD+JWny3WgB1zGhJX8XVePwm9k4wdBg==
@@ -7833,12 +7833,13 @@ tailwindcss-flexbox-order@^1.1.0:
     postcss "^7.0.14"
     tailwindcss "^1.0.0-beta.4"
 
-tailwindcss-interaction-variants@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/tailwindcss-interaction-variants/-/tailwindcss-interaction-variants-2.0.0.tgz#3dc967fbc7cab6ac7d05c9fb75264a97111c9bdb"
-  integrity sha512-GoOojKktbtnzumT7Ip9zPbyKn5yZf3Ig0If1NWvCQGWJbphCLowdRFj/kM1FEVuN4Tc9V6hJRwxZ6o4ps+VYnQ==
+tailwindcss-interaction-variants@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/tailwindcss-interaction-variants/-/tailwindcss-interaction-variants-2.1.0.tgz#73444e877f381f93d658219e034126f6c7eccfd4"
+  integrity sha512-HjTogds6XvX+k0T+befFhXYbe76PWqyTPyBilxAKviUZP46UBTP0wYGmZMUpetEEWxxbshVd8m1e7Ijw22OWuw==
   dependencies:
-    lodash "^4.17.11"
+    lodash "^4.17.14"
+    postcss-selector-parser "^6.0.2"
 
 tailwindcss-multi-column@^1.0.1:
   version "1.0.1"

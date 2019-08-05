@@ -9,7 +9,7 @@
   "dependencies": {
     "@gridsome/source-wordpress": "0.3.0",
     "feather-icons": "4.22.1",
-    "gridsome": "0.6.6",
+    "gridsome": "0.6.7",
     "vue-feather-icons": "5.0.0",
     "vue-fragment": "1.5.1",
     "vue-masonry-css": "1.0.3",
@@ -21,7 +21,7 @@
     "percy": "^0.9.0",
     "postcss-import": "12.0.1",
     "postcss-preset-env": "6.7.0",
-    "tailwindcss": "1.0.5",
+    "tailwindcss": "1.0.6",
     "tailwindcss-alpha": "0.1.4",
     "tailwindcss-flexbox-order": "^1.1.0",
     "tailwindcss-interaction-variants": "^2.1.0",

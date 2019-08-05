@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - "8"
+  - "10"
+  - "12"
+
+cache:
+  yarn: true
+  directories:
+    - node_modules
+
+script:
+  - yarn install
+  - yarn run build
+  - npx percy snapshot dist/

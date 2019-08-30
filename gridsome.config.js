@@ -54,6 +54,7 @@ module.exports = {
         routes: {
           post: '/:year/:month/:day/:slug',
           post_tag: '/tag/:slug',
+          category: '/category/:slug',
         },
       },
     },

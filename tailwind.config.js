@@ -112,8 +112,9 @@ module.exports = {
 
   plugins: [
     require('tailwindcss-interaction-variants')(),
+    require('@tailwindcss/custom-forms'),
 
-    // require('tailwindcss-alpha')(),
+    require('tailwindcss-alpha')(),
     require('tailwindcss-flexbox-order')(),
     require('tailwindcss-multi-column')(),
   ],

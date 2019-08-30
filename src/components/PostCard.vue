@@ -3,7 +3,8 @@
 
     <header class="flex flex-col-reverse">
 
-      <h2 :class="classes.h2"><router-link :to="node.path" v-html="node.title" /></h2>
+      <h2 :class="classes.h2">{{ node.title }}</h2>
+      <router-link :to="node.path" class="absolute inset-0" />
 
       <figure v-if="node.featuredMedia" :class="classes.figure">
         <g-image class="block" :src="node.featuredMedia.sourceUrl" />
@@ -11,8 +12,8 @@
 
       <nav v-if="node.categories.length" class="-mt-10 md:-mt-12 mb-3 md:mb-5">
         <ul class="flex flex-wrap text-xs font-medium uppercase tracking-wide">
-          <li v-for="category in node.categories" :key="category.slug" class="mr-2">
-            <BaseBadge theme="primary" :url="`tag/${category.slug}`" :label="category.title" />
+          <li v-for="node in node.categories" :key="node.id" class="mr-2">
+            <BaseBadge theme="primary" :url="node.path" :label="node.title" />
           </li>
         </ul>
       </nav>
@@ -24,8 +25,8 @@
     <footer v-if="node.artistas.length" class="mt-6">
       <nav class="overflow-x-scroll">
         <ul class="flex min-w-max text-xs font-medium uppercase tracking-wide">
-          <li v-for="artist in node.artistas" :key="artist.slug" class="mr-2">
-            <BaseBadge :url="`tag/${artist.slug}`" :label="artist.title" />
+          <li v-for="node in node.artistas" :key="node.id" class="mr-2">
+            <BaseBadge :url="node.path" :label="node.title" />
           </li>
         </ul>
       </nav>
@@ -47,7 +48,7 @@ export default {
     classes() {
       return {
         article: [
-          'flex flex-col px-4 py-6',
+          'relative flex flex-col px-4 py-6',
           this.getActiveTheme === 'light'
             ? this.node.format === 'link' ? 'text-white bg-gray-900' : 'text-gray-900 border-gray-900 border-t-4 bg-white'
             : this.node.format === 'link' ? 'text-gray-900 bg-white' : 'text-white border-white border-t-4 bg-gray-900',

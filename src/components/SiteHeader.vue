@@ -96,11 +96,14 @@ export default {
       transition:
         background-color 0.125s ease-in-out,
         border-color 0.125s ease-in-out;
-      &:matches(:hover, :focus) { @apply bg-gray-800 border-gray-500; }
+
+      &:matches(:hover, :focus) {
+        @apply bg-gray-800-50;
+      }
     }
 
     & li a.active.active--exact {
-      @apply bg-gray-800;
+      @apply bg-gray-800-75;
     }
   }
 </style>

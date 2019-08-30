@@ -36,12 +36,16 @@
             sourceUrl
           }
           categories {
+            id
             title
             slug
+            path
           }
           artistas {
+            id
             title
             slug
+            path
           }
         }
       }

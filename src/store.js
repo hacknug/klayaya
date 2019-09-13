@@ -1,13 +1,14 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import { SunIcon, MoonIcon } from 'vue-feather-icons'
+import { GlobeIcon, SunIcon, MoonIcon } from 'vue-feather-icons'
 
 Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    activeTheme: 'light', // This will match one of themes.key
+    activeTheme: 'classic', // This will match one of themes.key
     themes: {
+      classic: { icon: GlobeIcon },
       light: { icon: SunIcon },
       dark: { icon: MoonIcon },
     },

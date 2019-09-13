@@ -15,15 +15,15 @@ export default {
   metaInfo() {
     return {
       bodyAttrs: {
-        class: [
-          'md:flex min-h-screen',
-          this.$store.state.activeTheme === 'light'
-            ? 'text-gray-900 bg-gray-300'
-            : 'text-gray-100 bg-gray-900',
-          'text-sm md:text-base leading-normal font-sans antialiased'
-        ].join(' '),
+        'data-theme': this.$store.state.activeTheme,
+        'class': 'md:flex min-h-screen text-gray-900 bg-gray-300 text-sm md:text-base leading-normal font-sans antialiased',
       },
     }
   },
 }
 </script>
+
+<style lang="postcss">
+  body[data-theme="light"] { @apply text-gray-900 bg-gray-300; }
+  body[data-theme="dark"] { @apply text-gray-100 bg-gray-900; }
+</style>

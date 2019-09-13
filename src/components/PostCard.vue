@@ -1,5 +1,5 @@
 <template>
-  <article :class="classes.article">
+  <article :data-card="node.format" :class="classes.article">
 
     <header class="flex flex-col-reverse">
 
@@ -49,9 +49,7 @@ export default {
       return {
         article: [
           'relative flex flex-col px-4 py-6',
-          this.getActiveTheme === 'light'
-            ? this.node.format === 'link' ? 'text-white bg-gray-900' : 'text-gray-900 border-gray-900 border-t-4 bg-white'
-            : this.node.format === 'link' ? 'text-gray-900 bg-white' : 'text-white border-white border-t-4 bg-gray-900',
+          this.node.format === 'link' ? 'text-white bg-gray-900' : 'text-gray-900 border-gray-900 border-t-4 bg-white',
           'rounded-b shadow hover:shadow-md',
         ],
 
@@ -63,3 +61,16 @@ export default {
   },
 }
 </script>
+
+<style lang="postcss">
+  [data-card] {
+    @nest body[data-theme="light"] & {
+      @apply text-gray-900 border-gray-900 border-t-4 bg-white;
+      &[data-card="link"] { @apply text-white bg-gray-900; }
+    }
+    @nest body[data-theme="dark"] & {
+      @apply text-white border-white border-t-4 bg-gray-900;
+      &[data-card="link"] { @apply text-gray-900 bg-white; }
+    }
+  }
+</style>

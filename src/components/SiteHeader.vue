@@ -67,8 +67,7 @@ export default {
         header: [
           'md:sticky top-0',
           'flex flex-wrap md:flex-no-wrap md:flex-col flex-shrink-0 justify-between',
-          'w-full md:max-w-xs md:h-screen p-4 md:p-8 text-white',
-          this.getActiveTheme === 'light' ? 'bg-gray-900' : 'bg-black',
+          'w-full md:max-w-xs md:h-screen p-4 md:p-8 text-white bg-gray-900',
         ],
         nav: [
           'order-1 md:order-0',
@@ -88,6 +87,9 @@ export default {
 
 <style lang="postcss">
   #header {
+    @nest body[data-theme="light"] & { @apply bg-gray-900; }
+    @nest body[data-theme="dark"] & { @apply bg-black; }
+
     & svg {
       stroke-width: 1.5px;
     }

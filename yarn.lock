@@ -4259,10 +4259,10 @@ graphql@^14.4.2:
   dependencies:
     iterall "^1.2.2"
 
-gridsome@0.7.2:
-  version "0.7.2"
-  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.7.2.tgz#b9e523d99e8c9e80bd21c8a9e44d5b74b29059e1"
-  integrity sha512-cEFlqPLsna2PWqHyz1xUhtJbao4t9nYiuPVcLwoHg8v/H7a/7ncFjol8Nf0N1CuDYCdH2zxudLTZ/p0XR7dcJg==
+gridsome@0.7.3:
+  version "0.7.3"
+  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.7.3.tgz#c61225b5122d325e585b4d1809c2f0585bdcb7f2"
+  integrity sha512-Hs84+1rf0dsB+dRunBYVpqg8GNR4gXfUvlMOapyj1oWtt7qOTgc/qk6rFmEvfPUgatxGSfLLE2XtkPFEiw+vMQ==
   dependencies:
     "@babel/code-frame" "^7.5.5"
     "@babel/core" "^7.0.0"

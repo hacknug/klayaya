@@ -926,7 +926,7 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@tailwindcss/custom-forms@^0.2.1":
+"@tailwindcss/custom-forms@0.2.1":
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/@tailwindcss/custom-forms/-/custom-forms-0.2.1.tgz#40e5ed1fff6d29d8ed1c508a0b2aaf8da96962e0"
   integrity sha512-XdP5XY6kxo3x5o50mWUyoYWxOPV16baagLoZ5uM41gh6IhXzhz/vJYzqrTb/lN58maGIKlpkxgVsQUNSsbAS3Q==
@@ -6561,7 +6561,7 @@ percy-client@^3.0.3:
     request-promise "^4.2.2"
     walk "^2.3.14"
 
-percy@^0.13.0:
+percy@0.13.0:
   version "0.13.0"
   resolved "https://registry.yarnpkg.com/percy/-/percy-0.13.0.tgz#55208302e96a3f20323e2e6a9898999922303fc4"
   integrity sha512-UQt10M3nfW0IwEqMSBirPcHzzRlQ4Jp1mOEEcOs1UoljJeMZd4yRsJL51wCULKZyftT6f9asam8u46gOM80BKA==
@@ -8631,7 +8631,7 @@ tailwindcss-alpha@bradlc/tailwindcss-alpha#7/head:
     "@hacknug/tailwindcss-plugin-utils" "^0.5.1"
     color "^3.1.2"
 
-tailwindcss-flexbox-order@^1.1.0:
+tailwindcss-flexbox-order@1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/tailwindcss-flexbox-order/-/tailwindcss-flexbox-order-1.1.0.tgz#22375b258c1d993dd881762acaa1ba7edbf31f59"
   integrity sha512-e39GPwkBBdoFzcNw+PpfSIihn0YEVc7SAfYbyzlD33qVJXENq6M7Vhbl1j3Dc/+UGHqRcpfnSqEym3kzI/luOA==
@@ -8640,7 +8640,7 @@ tailwindcss-flexbox-order@^1.1.0:
     postcss "^7.0.14"
     tailwindcss "^1.0.0-beta.4"
 
-tailwindcss-interaction-variants@^2.2.0:
+tailwindcss-interaction-variants@2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/tailwindcss-interaction-variants/-/tailwindcss-interaction-variants-2.2.0.tgz#a6667af19f7ba39d841e5b8dc668eac68fd8b01c"
   integrity sha512-ZKi0YF4QZSyvL6V2+Y94KsyocynI6hSot6e8m6eSrnEg2KLl/begfsB2CnZ+s83EgWEL2/zA+cC3nNCVnT2mTA==
@@ -8648,7 +8648,7 @@ tailwindcss-interaction-variants@^2.2.0:
     lodash "^4.17.15"
     postcss-selector-parser "^6.0.2"
 
-tailwindcss-multi-column@^1.0.2:
+tailwindcss-multi-column@1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/tailwindcss-multi-column/-/tailwindcss-multi-column-1.0.2.tgz#630f5ec6586d0846014555aa2c91510c06a8b715"
   integrity sha512-2hn7WIgzTWfstPz7H0C2dqQTWoOMfUweH3MEYXhydpLpiIs5HWZkuP05vI92lVwEGB/7QVpjWZKGeUgiwbN7Yw==
@@ -9318,7 +9318,7 @@ vue@^2.6.10:
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.10.tgz#a72b1a42a4d82a721ea438d1b6bf55e66195c637"
   integrity sha512-ImThpeNU9HbdZL3utgMCq0oiMzAkt1mcgy3/E6zWC/G6AaQoeuFdsl9nDhTDU3X1R6FK7nsIUuRACVcjI+A2GQ==
 
-vuex@^3.1.1:
+vuex@3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/vuex/-/vuex-3.1.1.tgz#0c264bfe30cdbccf96ab9db3177d211828a5910e"
   integrity sha512-ER5moSbLZuNSMBFnEBVGhQ1uCBNJslH9W/Dw2W7GZN23UQA69uapP5GTT9Vm8Trc0PzBSVt6LzF3hGjmv41xcg==

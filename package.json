@@ -14,18 +14,18 @@
     "vue-fragment": "1.5.1",
     "vue-masonry-css": "1.0.3",
     "vue-svg-inline-loader": "1.2.18",
-    "vuex": "^3.1.1"
+    "vuex": "3.1.1"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "1.3.0",
-    "@tailwindcss/custom-forms": "^0.2.1",
-    "percy": "^0.13.0",
+    "@tailwindcss/custom-forms": "0.2.1",
+    "percy": "0.13.0",
     "postcss-import": "12.0.1",
     "postcss-preset-env": "6.7.0",
     "tailwindcss": "1.1.2",
     "tailwindcss-alpha": "bradlc/tailwindcss-alpha#7/head",
-    "tailwindcss-flexbox-order": "^1.1.0",
-    "tailwindcss-interaction-variants": "^2.2.0",
-    "tailwindcss-multi-column": "^1.0.2"
+    "tailwindcss-flexbox-order": "1.1.0",
+    "tailwindcss-interaction-variants": "2.2.0",
+    "tailwindcss-multi-column": "1.0.2"
   }
 }

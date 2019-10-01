@@ -708,10 +708,10 @@
     sort-package-json "^1.15.0"
     update-notifier "^3.0.1"
 
-"@gridsome/source-wordpress@0.4.1":
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/@gridsome/source-wordpress/-/source-wordpress-0.4.1.tgz#0c4183082db6253400c87c473d3d255c037beab5"
-  integrity sha512-q9xHAGKR6SyDWmKtqPnAVlLYVxqMF8PjY8IzB6O0cttmfISE8JWgfw/X6WbnTzRuqGdGYBS/UsdyAnt/1OcSRQ==
+"@gridsome/source-wordpress@0.4.2":
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/@gridsome/source-wordpress/-/source-wordpress-0.4.2.tgz#8dc769880f3c7eb04e52ebb2d0d57d50fdfe4921"
+  integrity sha512-l7iUrdMKf2Jg5erOPK1XIBRGw1uCg484B9MgtVh17wLzGxhQYiQe4y91EEHSjGzH0lpa3k2/PimiP40FP8qo7w==
   dependencies:
     axios "^0.19.0"
     camelcase "^5.0.0"

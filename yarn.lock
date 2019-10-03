@@ -6581,10 +6581,10 @@ percy-client@^3.1.0:
     request-promise "^4.2.2"
     walk "^2.3.14"
 
-percy@0.17.0:
-  version "0.17.0"
-  resolved "https://registry.yarnpkg.com/percy/-/percy-0.17.0.tgz#0d8cfa082169632b4b9ff75bd1c3b78b504a594c"
-  integrity sha512-Ag+eGfEF60Ik92XgzLjARH8/U+bObX1FubJ6CZ1gP1aAlrWaSxsNt0AZTiMMQ/XoUY7D/O1iMaXZTOWSe0uv0w==
+percy@0.17.1:
+  version "0.17.1"
+  resolved "https://registry.yarnpkg.com/percy/-/percy-0.17.1.tgz#38ae4092e92761c9ad9c137fc71624c68c769c88"
+  integrity sha512-OpDwiG2KPT7UKeGlszBTFEn/gWKFyw06D55yfd4UdI1RT6Qyh90y0um0RP6cWSdDWvJkOSXySFNY6VA82YZe9w==
   dependencies:
     "@oclif/command" "1.5.16"
     "@oclif/config" "^1"

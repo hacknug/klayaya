@@ -691,15 +691,16 @@
     postcss "^7.0.14"
     purgecss "^1.4.0"
 
-"@gridsome/cli@^0.2.3":
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/@gridsome/cli/-/cli-0.2.3.tgz#5d9a64fa6d3736a3855d68e003aee8d7a057d07a"
-  integrity sha512-JGCt8i+qOYd2H16dWojiikA6PdTsjKi1AtgfXKrxwEX9m2RvMVi6h+kV5mddxWMWgxrN/WsPF4Zp/5g7ky4+3g==
+"@gridsome/cli@^0.3.1":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@gridsome/cli/-/cli-0.3.1.tgz#8bdf97facddb3ab5338eb57521bc0bf5808561d2"
+  integrity sha512-DBzX0yWAE98kn1oZ69oT5dPqUNd9Isr+2/YFU/XP7e/+5OHEYsXdVlFrLgHkEwAsJvtfbkm5s5654mQ7UoK+rg==
   dependencies:
     "@hjvedvik/tasks" "^0.0.8"
     chalk "^2.4.1"
     commander "^2.15.1"
     didyoumean "^1.2.1"
+    envinfo "^7.3.1"
     execa "^0.10.0"
     find-up "^2.1.0"
     fs-extra "^6.0.1"
@@ -3275,6 +3276,11 @@ env-variable@0.0.x:
   resolved "https://registry.yarnpkg.com/env-variable/-/env-variable-0.0.5.tgz#913dd830bef11e96a039c038d4130604eba37f88"
   integrity sha512-zoB603vQReOFvTg5xMl9I1P2PnHsHQQKTEowsKKD7nseUfJq6UWzK+4YtlWUO1nhiQUxe6XMkk+JleSZD1NZFA==
 
+envinfo@^7.3.1:
+  version "7.4.0"
+  resolved "https://registry.yarnpkg.com/envinfo/-/envinfo-7.4.0.tgz#bef4ece9e717423aaf0c3584651430b735ad6630"
+  integrity sha512-FdDfnWnCVjxTTpWE3d6Jgh5JDIA3Cw7LCgpM/pI7kK1ORkjaqI2r6NqQ+ln2j0dfpgxY00AWieSvtkiZQKIItA==
+
 errno@^0.1.3, errno@~0.1.7:
   version "0.1.7"
   resolved "https://registry.yarnpkg.com/errno/-/errno-0.1.7.tgz#4684d71779ad39af177e3f007996f7c67c852618"
@@ -4271,14 +4277,14 @@ graphql@^14.4.2:
   dependencies:
     iterall "^1.2.2"
 
-gridsome@0.7.6:
-  version "0.7.6"
-  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.7.6.tgz#416ced63848d7f523e7da3ab0ba17d5f582d7fa1"
-  integrity sha512-rsxmAJa+GezFvzEMlClI7nADBq4L+vFe1+lwdmX0AadiDlCIDHbU6WRHZdUaDFYqOP5dakruB03A6tMa1Miq7A==
+gridsome@0.7.8:
+  version "0.7.8"
+  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.7.8.tgz#21ca3684d00f2e9e44ce8bba2d4ae5d1a7797778"
+  integrity sha512-ksUtNREvpL+2Yn8ctxcNMIjkDOp+vJ8UwM15JtqvqUCAgdiHTZXwtC2sr/aZKDNVjACi2dmg1ThAs5NEftsThQ==
   dependencies:
     "@babel/code-frame" "^7.5.5"
     "@babel/core" "^7.0.0"
-    "@gridsome/cli" "^0.2.3"
+    "@gridsome/cli" "^0.3.1"
     "@hapi/joi" "^15.1.1"
     "@sindresorhus/slugify" "^0.8.0"
     "@vue/babel-preset-app" "^3.4.0"

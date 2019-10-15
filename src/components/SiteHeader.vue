@@ -2,8 +2,8 @@
   <header id="header" :class="classes.header">
 
     <g-link to="/" class="flex w-32 md:w-64 h-32 md:h-64 -m-3 md:my-0 p-3 border border-transparent hover:border-white rounded-full overflow-hidden">
-      <h1 class="clip">{{ $static.metaData.siteName }}</h1>
-      <img svg-inline class="block w-full fill-current" src="../assets/img/logo.svg" :alt="$static.metaData.siteName + ' logo'" />
+      <h1 class="clip">{{ $static.metadata.siteName }}</h1>
+      <img svg-inline class="block w-full fill-current" src="../assets/img/logo.svg" :alt="$static.metadata.siteName + ' logo'" />
     </g-link>
 
     <nav :class="classes.nav">
@@ -30,7 +30,7 @@
 
 <static-query>
 query Home {
-  metaData {
+  metadata {
     siteName
   }
 }

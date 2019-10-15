@@ -7,7 +7,7 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
-    "@gridsome/source-wordpress": "0.4.2",
+    "@gridsome/source-wordpress": "0.4.3",
     "feather-icons": "4.24.1",
     "gridsome": "0.7.6",
     "vue-feather-icons": "5.0.0",

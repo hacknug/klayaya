@@ -638,10 +638,10 @@
     core-js "^2.6.5"
     regenerator-runtime "^0.13.2"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.6.0":
-  version "7.6.2"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.6.2.tgz#c3d6e41b304ef10dcf13777a33e7694ec4a9a6dd"
-  integrity sha512-EXxN64agfUqqIGeEjI5dL5z0Sw0ZwWo1mLTi4mQowCZ42O59b7DRpZAnTC6OqdF28wMBMFKNb/4uFGrVaigSpg==
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.6.3":
+  version "7.6.3"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.6.3.tgz#935122c74c73d2240cafd32ddb5fc2a6cd35cf1f"
+  integrity sha512-kq6anf9JGjW8Nt5rYfEuGRaEAaH1mkv3Bbu6rYvLOpPh/RusSJXuKPEAoZ7L7gybZkchE8+NV5g9vKF4AGAtsA==
   dependencies:
     regenerator-runtime "^0.13.2"
 
@@ -708,10 +708,10 @@
     sort-package-json "^1.15.0"
     update-notifier "^3.0.1"
 
-"@gridsome/source-wordpress@0.4.2":
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/@gridsome/source-wordpress/-/source-wordpress-0.4.2.tgz#8dc769880f3c7eb04e52ebb2d0d57d50fdfe4921"
-  integrity sha512-l7iUrdMKf2Jg5erOPK1XIBRGw1uCg484B9MgtVh17wLzGxhQYiQe4y91EEHSjGzH0lpa3k2/PimiP40FP8qo7w==
+"@gridsome/source-wordpress@0.4.3":
+  version "0.4.3"
+  resolved "https://registry.yarnpkg.com/@gridsome/source-wordpress/-/source-wordpress-0.4.3.tgz#e8c5b7cd67b593ea27c3bb7dfb1f168ec60f2754"
+  integrity sha512-3+hF0hiXFCO/9BoXmiqVgTWMWdKi9AkmdAAtDdIZbW87BYEg1StWA2R631+ZjHAsdDeoPUmGuFHPYMobk6fNUQ==
   dependencies:
     axios "^0.19.0"
     camelcase "^5.0.0"
@@ -6581,10 +6581,10 @@ percy-client@^3.1.0:
     request-promise "^4.2.2"
     walk "^2.3.14"
 
-percy@0.17.0:
-  version "0.17.0"
-  resolved "https://registry.yarnpkg.com/percy/-/percy-0.17.0.tgz#0d8cfa082169632b4b9ff75bd1c3b78b504a594c"
-  integrity sha512-Ag+eGfEF60Ik92XgzLjARH8/U+bObX1FubJ6CZ1gP1aAlrWaSxsNt0AZTiMMQ/XoUY7D/O1iMaXZTOWSe0uv0w==
+percy@0.19.1:
+  version "0.19.1"
+  resolved "https://registry.yarnpkg.com/percy/-/percy-0.19.1.tgz#2ce1d57b300ae8971352537ab90eaba2c56b6f3d"
+  integrity sha512-/BflAjprJ9dSsWRWn1t/XjjY1j1z2EqIdB3lNiq+6kNiW4tTfsvXIYD++/GQ9rD2ao+KDjOboPtPNWc+Z3SgqA==
   dependencies:
     "@oclif/command" "1.5.16"
     "@oclif/config" "^1"
@@ -9319,13 +9319,13 @@ vue-style-loader@^4.1.0:
     hash-sum "^1.0.2"
     loader-utils "^1.0.2"
 
-vue-svg-inline-loader@1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/vue-svg-inline-loader/-/vue-svg-inline-loader-1.3.0.tgz#0f235921bfb3fea6fca65c4e78a00831f11b9e13"
-  integrity sha512-XPrI2NyPOncPydoStHiRN/0mS+mTtP38StcF96uw6bU3bjhclZUs/QAysEDpFkRQsIroGHDS5X4jogXWy0/BZQ==
+vue-svg-inline-loader@1.3.3:
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/vue-svg-inline-loader/-/vue-svg-inline-loader-1.3.3.tgz#0d0175d1fc92aeb35deac7ebfdb63a2a4fb47f7d"
+  integrity sha512-bhOvXQyn0wS3hiaDDt2TzUdWc1J1A0YfVjAvr6N5t0U8fcIRx7FkuIk9dS9pTPbFIuIUjyg/c0dH0AG9BtBycA==
   dependencies:
     "@babel/polyfill" "^7.6.0"
-    "@babel/runtime" "^7.6.0"
+    "@babel/runtime" "^7.6.3"
     core-js "^2.6.9"
     loader-utils "^1.2.3"
     svgo "^1.3.0"

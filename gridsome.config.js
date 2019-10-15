@@ -15,7 +15,7 @@ module.exports = {
       .tap(options => {
         options.plugins.unshift(...[
           require('postcss-import'),
-          require('tailwindcss')('./tailwind.config.js'),
+          require('tailwindcss'),
           require('postcss-preset-env')({
             stage: 0,
             autoprefixer: false,

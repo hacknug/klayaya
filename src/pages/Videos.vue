@@ -18,7 +18,7 @@
 
 <page-query>
   query Home ($page: Int) {
-    allWordPressPost (perPage: 16, page: $page, filter: { format: { eq: "video"}}) @paginate {
+    allWordPressPost (perPage: 16, page: $page, filter: { format: { eq: "video" } }) @paginate {
       pageInfo {
         totalPages
         currentPage

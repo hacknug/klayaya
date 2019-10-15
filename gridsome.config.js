@@ -43,6 +43,13 @@ module.exports = {
       .options({ /* ... */ })
   },
 
+  templates: {
+    WordPressArtistas: '/artistas/:slug',
+    WordPressCategory: '/category/:slug',
+    WordPressPost: '/:year/:month/:day/:slug',
+    WordPressPostTag: '/tag/:slug',
+  },
+
   plugins: [
     {
       use: '@gridsome/source-wordpress',
@@ -51,11 +58,6 @@ module.exports = {
         typeName: 'WordPress',
         perPage: 100,
         concurrent: 10,
-        routes: {
-          post: '/:year/:month/:day/:slug',
-          post_tag: '/tag/:slug',
-          category: '/category/:slug',
-        },
       },
     },
   ],

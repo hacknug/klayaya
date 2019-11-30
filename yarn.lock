@@ -8706,10 +8706,10 @@ tailwindcss-flexbox-order@1.1.0:
     postcss "^7.0.14"
     tailwindcss "^1.0.0-beta.4"
 
-tailwindcss-interaction-variants@2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/tailwindcss-interaction-variants/-/tailwindcss-interaction-variants-2.2.0.tgz#a6667af19f7ba39d841e5b8dc668eac68fd8b01c"
-  integrity sha512-ZKi0YF4QZSyvL6V2+Y94KsyocynI6hSot6e8m6eSrnEg2KLl/begfsB2CnZ+s83EgWEL2/zA+cC3nNCVnT2mTA==
+tailwindcss-interaction-variants@2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/tailwindcss-interaction-variants/-/tailwindcss-interaction-variants-2.3.0.tgz#fe321285cf0606ef1f3f9de8f7f8d36549931d11"
+  integrity sha512-kXjk9oYew6O45GJDxWiTC8FOz1NSfeneRASSF35axXTTY20hRHKWDLq4d/bphFDxmV3FiyF1qoD5zsdVCRzxSg==
   dependencies:
     lodash "^4.17.15"
     postcss-selector-parser "^6.0.2"

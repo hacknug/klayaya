@@ -9,7 +9,7 @@
   "dependencies": {
     "@gridsome/source-wordpress": "0.5.2",
     "feather-icons": "4.25.0",
-    "gridsome": "0.7.11",
+    "gridsome": "0.7.12",
     "vue-feather-icons": "5.0.0",
     "vue-fragment": "1.5.1",
     "vue-masonry-css": "1.0.3",

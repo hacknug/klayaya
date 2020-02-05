@@ -25,7 +25,7 @@
     "tailwindcss": "1.1.4",
     "tailwindcss-alpha": "bradlc/tailwindcss-alpha#7/head",
     "tailwindcss-flexbox-order": "1.1.0",
-    "tailwindcss-interaction-variants": "2.4.0",
+    "tailwindcss-interaction-variants": "3.0.0",
     "tailwindcss-multi-column": "1.0.2"
   }
 }

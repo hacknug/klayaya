@@ -81,7 +81,7 @@ module.exports = {
   },
 
   plugins: [
-    require('tailwindcss-interaction-variants')(),
+    require('tailwindcss-interaction-variants'),
     require('@tailwindcss/custom-forms'),
 
     require('tailwindcss-alpha')(),

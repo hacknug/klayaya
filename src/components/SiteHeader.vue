@@ -1,8 +1,8 @@
 <template>
   <header id="header" :class="classes.header">
 
-    <g-link to="/" class="flex w-32 md:w-64 h-32 md:h-64 -m-3 md:my-0 p-3 border border-transparent hover:border-white rounded-full overflow-hidden">
-      <h1 class="clip">{{ $static.metadata.siteName }}</h1>
+    <g-link to="/" class="md:w-64 md:h-64 md:my-0 hover:border-white flex w-32 h-32 p-3 -m-3 overflow-hidden border border-transparent rounded-full">
+      <h1 class="sr-only">{{ $static.metadata.siteName }}</h1>
       <img svg-inline class="block w-full fill-current" src="../assets/img/logo.svg" :alt="$static.metadata.siteName + ' logo'" />
     </g-link>
 
@@ -17,7 +17,7 @@
       </ul>
     </nav>
 
-    <div class="flex flex-col-reverse md:flex-row justify-between items-end md:items-baseline -m-3 md:mt-auto">
+    <div class="md:flex-row md:items-baseline md:mt-auto flex flex-col-reverse items-end justify-between -m-3">
       <SocialLinks />
       <div class="flex">
         <ThemeSwitcher />

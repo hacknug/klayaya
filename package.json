@@ -19,6 +19,7 @@
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "1.3.0",
     "@tailwindcss/custom-forms": "0.2.1",
+    "gridsome-plugin-tailwindcss": "2.2.36",
     "percy": "0.21.0",
     "postcss-import": "12.0.1",
     "postcss-preset-env": "6.7.0",

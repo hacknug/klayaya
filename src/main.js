@@ -1,4 +1,3 @@
-import '~/assets/css/main.pcss'
 import '~/assets/img/logo.svg'
 
 import Fragment from 'vue-fragment'

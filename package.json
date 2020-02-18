@@ -7,7 +7,7 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
-    "@gridsome/source-wordpress": "0.5.2",
+    "@gridsome/source-wordpress": "0.5.3",
     "feather-icons": "4.26.0",
     "gridsome": "0.7.12",
     "vue-feather-icons": "5.0.0",
@@ -18,6 +18,7 @@
   },
   "devDependencies": {
     "@tailwindcss/custom-forms": "0.2.1",
+    "gridsome-plugin-tailwindcss": "2.2.36",
     "percy": "0.21.0",
     "tailwindcss-alpha": "bradlc/tailwindcss-alpha#7/head",
     "tailwindcss-flexbox-order": "1.1.0",

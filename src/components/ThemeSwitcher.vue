@@ -8,7 +8,7 @@
         :key="name">
 
         <button class="flex p-2" @click="setActiveTheme(name, $event)">
-          <span class="clip">{{ `${name} Theme`|capitalize }}</span>
+          <span class="sr-only">{{ `${name} Theme`|capitalize }}</span>
           <component :is="theme.icon"></component>
         </button>
 

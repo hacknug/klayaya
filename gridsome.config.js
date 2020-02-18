@@ -1,41 +1,10 @@
-// This is where project configuration and installed plugin options are located.
-// Learn more: https://gridsome.org/docs/config
-
 module.exports = {
   siteName: 'KLaYaya',
   siteUrl: 'https://klayaya.netlify.com',
   siteDescription: 'Barcelona-based Netlabel, now archived.',
   titleTemplate: `%s - KLaYaya`,
 
-  chainWebpack: config => {
-    config.module
-      .rule('postcss') // css, sass, scss, less, postcss, stylus
-      .oneOf('normal') // normal, module
-      .use('postcss-loader')
-      .tap(options => {
-        options.plugins.unshift(...[
-          require('postcss-import'),
-          require('tailwindcss'),
-          require('postcss-preset-env')({
-            stage: 0,
-            autoprefixer: false,
-            features: {
-              'nesting-rules': {
-                bubble: ['tailwind', 'apply', 'variants', 'responsive', 'screen'],
-              },
-            },
-          }),
-        ])
-
-        if (process.env.NODE_ENV === 'production') {
-          options.plugins.push(...[
-            require('@fullhuman/postcss-purgecss'),
-          ])
-        }
-
-        return options
-      })
-
+  chainWebpack: (config) => {
     config.module
       .rule('vue')
       .use('vue-svg-inline-loader')
@@ -44,13 +13,15 @@ module.exports = {
   },
 
   templates: {
-    WordPressArtistas: '/artistas/:slug',
-    WordPressCategory: '/category/:slug',
     WordPressPost: '/:year/:month/:day/:slug',
     WordPressPostTag: '/tag/:slug',
+    WordPressArtistas: '/artistas/:slug',
+    WordPressCategory: '/category/:slug',
   },
 
   plugins: [
+    'gridsome-plugin-tailwindcss',
+
     {
       use: '@gridsome/source-wordpress',
       options: {

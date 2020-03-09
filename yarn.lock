@@ -4348,10 +4348,10 @@ graphql@^14.4.2:
   dependencies:
     iterall "^1.2.2"
 
-gridsome-plugin-tailwindcss@2.2.36:
-  version "2.2.36"
-  resolved "https://registry.yarnpkg.com/gridsome-plugin-tailwindcss/-/gridsome-plugin-tailwindcss-2.2.36.tgz#4e7c6a0217eee111f2d0cf28f87db60632e25154"
-  integrity sha512-ot42j3X3mz8Skmt5mHVDu13JgNp9fmfOQ1Ki+Qw95i+bfpGSynFUxO2ChI4KlDmubR8Ma96QRrVewdm4t4CQjw==
+gridsome-plugin-tailwindcss@2.2.41:
+  version "2.2.41"
+  resolved "https://registry.yarnpkg.com/gridsome-plugin-tailwindcss/-/gridsome-plugin-tailwindcss-2.2.41.tgz#b9c9f1f10aea97ee00652ef030020d016df0b545"
+  integrity sha512-uaIOIkgPsAGFz1882g8iplUHtd4oGOoytlJXTK9Brfyv6EKR6TIYRRk/stP+sn3vmwyrTER2/3BzdmRb5xqRww==
   dependencies:
     "@fullhuman/postcss-purgecss" "^2.0.6"
     postcss-import "^12.0.1"

@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "@tailwindcss/custom-forms": "0.2.1",
-    "gridsome-plugin-tailwindcss": "2.2.36",
+    "gridsome-plugin-tailwindcss": "2.2.48",
     "percy": "0.26.7",
     "tailwindcss-alpha": "bradlc/tailwindcss-alpha#7/head",
     "tailwindcss-flexbox-order": "1.1.0",

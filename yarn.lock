@@ -6627,10 +6627,10 @@ percy-client@^3.2.0:
     request-promise "^4.2.2"
     walk "^2.3.14"
 
-percy@0.26.7:
-  version "0.26.7"
-  resolved "https://registry.yarnpkg.com/percy/-/percy-0.26.7.tgz#beb47fe87303e6418cd8fe66965ae205b6c4ea6b"
-  integrity sha512-7XNzUZsasti10JZluL3wASRaiVh8TYgfPqFlzekq4ADttgRH1vom6O3zgxdLYYrll0g2MkA/LLny/YVZ9XasSQ==
+percy@0.26.8:
+  version "0.26.8"
+  resolved "https://registry.yarnpkg.com/percy/-/percy-0.26.8.tgz#277e68f57842703a46bcfc26c4f168c466fc080a"
+  integrity sha512-LattrC2xGLMUYJRT+iBqy3yQkF70ZYcTVr6dCAGs9ECmo1HAZcDHMIqEO8NI86ge608uScogYO0XIFztUcG75Q==
   dependencies:
     "@oclif/command" "1.5.19"
     "@oclif/config" "^1"
@@ -6650,7 +6650,7 @@ percy@0.26.7:
     image-size "^0.8.2"
     js-yaml "^3.13.1"
     percy-client "^3.2.0"
-    puppeteer "^3.0.2"
+    puppeteer "~3.1.0"
     retry-axios "^1.0.1"
     which "^2.0.1"
     winston "^3.0.0"
@@ -7584,7 +7584,7 @@ punycode@^2.1.0, punycode@^2.1.1:
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
   integrity sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
 
-puppeteer@^3.0.2:
+puppeteer@~3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/puppeteer/-/puppeteer-3.1.0.tgz#d44efdc5410809025f38bca2de106c3ae5c85a52"
   integrity sha512-jLa9sqdVx0tPnr2FcwAq+8DSjGhSM4YpkwOf3JE22Ycyqm71SW7B5uGfTyMGFoLCmbCozbLZclCjasPb0flTRw==

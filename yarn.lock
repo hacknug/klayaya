@@ -5799,10 +5799,15 @@ lodash.uniq@^4.5.0:
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
   integrity sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
 
-lodash@4.17.15, lodash@^4.17.11, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.3, lodash@^4.17.5:
+lodash@4.17.15:
   version "4.17.15"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
   integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
+
+lodash@^4.17.11, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.3, lodash@^4.17.5:
+  version "4.17.20"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
+  integrity sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
 
 log-update@^2.3.0:
   version "2.3.0"
@@ -9068,12 +9073,12 @@ tailwindcss-flexbox-order@1.1.0:
     postcss "^7.0.14"
     tailwindcss "^1.0.0-beta.4"
 
-tailwindcss-interaction-variants@3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/tailwindcss-interaction-variants/-/tailwindcss-interaction-variants-3.1.0.tgz#4dea13c8fa64fb6331a43b607fed45eee2fdf587"
-  integrity sha512-hEPns3OEJH8XdePYuO4ze6ZehI9IWYeVPflOeauiIaodV3QMGM2wr5s0Hy+vt0RizfarXxJAgmODcSsXQts3iQ==
+tailwindcss-interaction-variants@5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/tailwindcss-interaction-variants/-/tailwindcss-interaction-variants-5.0.0.tgz#8e0825dfa4b2a81804cbae536915e48a85e96580"
+  integrity sha512-Tmx9HjwuNA3G7cLUcebGkNchKkNVIZXBroxa0LBoq/KUb/xEKEM8qugUG7QczSNPhaZzpXmo3IzPkRhf4tDaOQ==
   dependencies:
-    lodash "^4.17.15"
+    lodash "^4.17.19"
     postcss-selector-parser "^6.0.2"
 
 tailwindcss-multi-column@1.0.2:

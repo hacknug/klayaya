@@ -22,7 +22,7 @@
     "percy": "0.28.6",
     "tailwindcss-alpha": "bradlc/tailwindcss-alpha#7/head",
     "tailwindcss-flexbox-order": "1.1.0",
-    "tailwindcss-interaction-variants": "3.1.0",
+    "tailwindcss-interaction-variants": "5.0.0",
     "tailwindcss-multi-column": "1.0.2"
   }
 }
